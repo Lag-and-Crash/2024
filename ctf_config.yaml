@@ -1,0 +1,19 @@
+config:
+  categories:
+  - crypto
+  - web
+  - forensics
+  - misc
+  - re
+  - pwn
+  - osint
+  difficulties:
+  - name: easy
+    value: 1000
+  - name: medium
+    value: 1000
+  - name: hard
+    value: 1000
+  name: LNC2024
+  port: 8000
+  port_mappings: null
