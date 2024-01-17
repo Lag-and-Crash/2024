@@ -1,0 +1,16 @@
+# Lucky Plaza Solution
+The key vulnerability is the unchecked `vector::pop_back()` call in `guess_lucky_number()`. Referring to the C++ documentation, we see that there is undefined behaviour when `pop_back()` is called on an empty vector. Empirically, it can be found that `pop_back()` decrements the `size` member of the vector, even when empty. This leads to an integer underflow as `size_t(0)` is decremented. Resultantly, we gain OOB read/write access via the `view_lucky_number()` and `modify_lucky_number()` functions respectively.
+
+One challenge is to pass the check in `guess_lucky_number()`. Since it is known that the binary is first seeded with the current time (`srand(time(0))`), we can try to synchronise the time on our local machine with the remote server. We can make a guess as to the time at which `time(0)` is called, and reproduce the PRNG locally. An alternative attack method is to simply brute-force the guessing since there is a small number of possibilites (0x88). This second method is used the provided exploit script.
+
+Next, the most intuitive exploitation path would involve using the OOB vector r/w to overwrite the saved instruction pointer on stack and [ret2sys](https://blog.caprinux.com/pwn/rop/ret2libc1/) (or similar). To achieve this, we first need to determine the offset of the instruction pointer from the vector data.
+> It is also important to note that the vector and its data lie at separate memory locations. The vector is a stack-allocated variable local to the `main()` scope, while its associated data (`vector::data()`) is part of a dynamically allocated buffer in the heap. When we access an element by its index, the desired memory location is calculated with the data as its base. So, the OOB index should be calculated from `vec.data()`.
+
+The heap-allocated `person` object is located close to `vec.data()` in memory. In fact, the offset is constant between runs. We can use the OOB read to leak the addresses stored in person. The `*my_vec` pointer gives us a stack leak, while the `name` string (dynamically allocated) gives us a heap leak. We can use the 2 leaks to calculate the address at which the saved `rip` is stored in memory, and also the address of `vec.data()`. We can then obtain a `libc` leak by reading the current saved `rip`, which points into `__libc_start_main`. Finally, we use the OOB write to craft the ROP chain on the stack. In the provided exploit script, we use libc gadgets to call `execve("/bin/sh")`.
+
+After popping the shell, we can read the flag.
+
+## Takeaways
+This challenge is meant to be a gentle introduction to exploiting C++ binaries while not departing too far from classic C exploitation concepts. The lack of bounds check is similar to classic C BOFs, while the integer underflow in size would likely be familiar as well. Additionally, bypassing the 'randomness' of the system is an idea some may not have encountered in the binary exploitation before, but more than one intuitive strategy exists to resolve it.
+
+The source code is also provided to encourage static analysis of a program that is slightly longer than some may be used to.
