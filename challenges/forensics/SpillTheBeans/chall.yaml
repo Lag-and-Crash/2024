@@ -1,0 +1,48 @@
+challenge:
+  # The name of the challenge author
+  author: 'n00bth3b0x'
+
+  # The category of the challenge
+  category: Forensics
+  # The description of the challenge
+  description: 'A user reported receiving an email that he thought appeared suspicious. The email has a word file attached and we wonder if the file is clean or contains attack code. The analytics center does not have the ability to look into this matter. Can you check for any harmful agents?'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'n00bth3b0x'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/SpillTheBeans.zip
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{@ut0r3cOv3r_1s_my_g0d_0f_l1f3}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 0
+    description: ''
+    requirements: null
+  
+  # The name of the challenge
+  name: 'SpillTheBeans'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  container-name:
+    name: 
+    path: 
+    port: ''
