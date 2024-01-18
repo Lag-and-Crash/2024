@@ -114,11 +114,11 @@ int main()
     setup();
     Person *person = nullptr;
     vector<long> vec;
-    vec.push_back(42);
 
     string name;
     cout << "Your name: ";
     cin >> name;
+    vec.push_back(42);
     person = new Person(name, &vec);
 
     std::cout << "🍀 Lucky Plaza 🍀\n";
