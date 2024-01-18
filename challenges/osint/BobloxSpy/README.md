@@ -8,7 +8,8 @@ It utilitse public API calls , archival machines , discord guild lookups , basic
 - **Difficulty:** [INSANE]
 
 ## Hints
-- `[Hint Content]` (1000 points)
+- `[look up roblox user api]` (100 points)
+- `[Look at history of website]` (100 points)
 
 ## Files
 - [`challenge.txt`](./dist/challengescenario.txt)
