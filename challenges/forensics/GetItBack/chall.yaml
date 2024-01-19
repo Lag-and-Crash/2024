@@ -6,7 +6,7 @@ challenge:
   category: 'Forensics'
 
   # The description of the challenge
-  description: 'Eval was working on his major assignment report to submit to his teacher when suddenly his computer shut down unexpectedly due to a power outage, and he hadn't saved the report even once. However, instead of starting a new report, Eval chose to spend 4 hours trying to recover the original report from the crash dump file, but ultimately failed. Eval really needs help.'
+  description: "Eval was working on his major assignment report to submit to his teacher when suddenly his computer shut down unexpectedly due to a power outage, and he hadn't saved the report even once. However, instead of starting a new report, Eval chose to spend 4 hours trying to recover the original report from the crash dump file, but ultimately failed. Eval really needs help."
 
   # The difficulty of the challenge
   difficulty: 'Medium'
@@ -25,10 +25,7 @@ challenge:
     regex: false
 
   # The hints for the challenge
-  hints:
-  - cost: 100
-    description: ''
-    requirements: null
+  hints: null
   
   # The name of the challenge
   name: 'GetItBack'
@@ -40,10 +37,4 @@ challenge:
 
 # The services for the challenge
 # If you have no services, do not include this section
-services:
-
-  # The name of the service
-  container-name:
-    name: container-name
-    path: service/container-name
-    port: ''
+services: null

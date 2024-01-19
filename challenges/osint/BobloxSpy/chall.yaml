@@ -1,18 +1,18 @@
 challenge:
   # The name of the challenge author
-  author: '[Sora]'
+  author: 'Sora'
 
   # The category of the challenge
-  category: '[Osint]'
+  category: 'Osint'
 
   # The description of the challenge
-  description: '[You are part of the secret service. An Enemy Spy disguised as a Roblox Developer was entrusted to keep his countrys nuclear launch code a secret, but he suffers from short term memory loss. So he decided to stash it away!!!. After you caught him , he failed to provide any information upon background research you find this. https://www.roblox.com/games/15966463305/LNC4RobloxDevSpys-Place]'
+  description: 'You are part of the secret service. An Enemy Spy disguised as a Roblox Developer was entrusted to keep his countrys nuclear launch code a secret, but he suffers from short term memory loss. So he decided to stash it away!!!. After you caught him , he failed to provide any information upon background research you find this. https://www.roblox.com/games/15966463305/LNC4RobloxDevSpys-Place'
 
   # The difficulty of the challenge
-  difficulty: '[Insane]'
+  difficulty: 'Insane'
 
   # The discord username of the author
-  discord: '[Sora_HEHE]'
+  discord: 'Sora_HEHE'
 
   # The files to be given to the participant
   # This should be a list of filepaths relative to the folder this file is in.
@@ -27,13 +27,13 @@ challenge:
   # The hints for the challenge
   hints:
   - cost: 100
-    description: '[look up roblox user api]'
+    description: 'look up roblox user api'
     cost: 100
-    description: '[Look at archival machine]'
+    description: 'Look at archival machine'
     requirements: null
   
   # The name of the challenge
-  name: '[Boblox]'
+  name: 'Boblox'
 
   # The requirements for the challenge
   # This should be a list of challenge names that the user must have completed before

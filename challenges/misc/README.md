@@ -7,6 +7,7 @@ This directory contains challenges related to Misc.
 | Easy | 0 |
 | Medium | 0 |
 | Hard | 0 |
+| Insane | 0 |
 | Total | 0 |
 
 ## Challenges (0 total)

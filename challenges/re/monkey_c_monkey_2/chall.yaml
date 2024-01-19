@@ -1,17 +1,18 @@
 challenge:
   author: 'Zavier'
   category: 'Reverse'
-  description: An APT group, known as "monkey-C-monkey-2", has targeted our company and successfully launched a ransomware operation on one of our employees. We have managed to recover a stageless binary that was dropped onto our server, as well as a network capture of the attack.
+  description: |
+    An APT group, known as "monkey-C-monkey-2", has targeted our company and successfully launched a ransomware operation on one of our employees. We have managed to recover a stageless binary that was dropped onto our server, as well as a network capture of the attack.
 
-Unfortunately, we were unable to locate any identify the malicious traffic in the network capture and have made little progress in decrypting our files. However, our threat intelligence tells us that this group is known to use a concept known as Malleable C2, which allows them to disguise their network traffic as legitimate traffic.
+    Unfortunately, we were unable to locate any identify the malicious traffic in the network capture and have made little progress in decrypting our files. However, our threat intelligence tells us that this group is known to use a concept known as Malleable C2, which allows them to disguise their network traffic as legitimate traffic.
 
-Could you help us find out how to decrypt our files?
+    Could you help us find out how to decrypt our files?
   difficulty: 'Hard'
   discord: 'gatari'
   files:
- - dist/capture.pcapng
- - dist/flag.txt.enc
- - dist/implant_x64.exe
+  - dist/capture.pcapng
+  - dist/flag.txt.enc
+  - dist/implant_x64.exe
   flags:
   - flag: LNC24{mOnKeY_sEe_M0nkey_7w0_7f7ad80dafbd28f2401ae37a8e0684a9}
     regex: false
