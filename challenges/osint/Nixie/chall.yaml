@@ -32,7 +32,7 @@ challenge:
   hints:
   - cost: 100
     description: 'Flickr api might help to find who uploaded the image'
-    cost: 150
+  - cost: 150
     description: '/meta'
     requirements: null
   
