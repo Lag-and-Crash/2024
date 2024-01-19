@@ -1,0 +1,46 @@
+challenge:
+  # The name of the challenge author
+  author: 'Warri'
+
+  # The category of the challenge
+  category: 'Crypto'
+
+  # The description of the challenge
+  description: "Hash collisions!"
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'warriii'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+ - dist/app.py
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{b1twI5e_aNd_i5_jU5t_b1tm4sKiNg_98bd61c32def}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Bit Collider'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  Bit_Collider:
+    name: Bit_Collider
+    path: service/Bit_Collider
+    port: '1337'
