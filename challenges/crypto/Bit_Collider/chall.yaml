@@ -17,7 +17,7 @@ challenge:
   # The files to be given to the participant
   # This should be a list of filepaths relative to the folder this file is in.
   files:
- - dist/app.py
+  - dist/app.py
 
   # The flags for the challenge
   flags:
@@ -40,7 +40,7 @@ challenge:
 services:
 
   # The name of the service
-  Bit_Collider:
-    name: Bit_Collider
+  bit-collider:
+    name: bit-collider
     path: service/Bit_Collider
     port: '1337'
