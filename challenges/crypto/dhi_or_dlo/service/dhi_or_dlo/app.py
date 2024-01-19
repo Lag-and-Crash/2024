@@ -3,7 +3,6 @@ from math import gcd
 from secret import flag
 from Crypto.Util.number import bytes_to_long
 
-r = 3**333
 m = bytes_to_long(flag)
 while True:
     rsa = RSA.generate(2048)
@@ -17,12 +16,11 @@ c = pow(m, e, n)
 print(f"n = {n}")
 print(f"e = {e}")
 print(f"c = {c}")
-print(f"r = {r}")
 print("dhi or dlo?")
 userinput = str(input(">> "))
 if userinput == "dhi":
     print(f"dhi = {d // 3**(1293 - 333)}")
 elif userinput == "dlo":
-    print(f"dlo = {d % r}")
+    print(f"dlo = {d % 3**333}")
 else:
     print("Invalid input.")
