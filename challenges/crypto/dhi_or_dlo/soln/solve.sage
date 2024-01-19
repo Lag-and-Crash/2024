@@ -31,8 +31,8 @@ for k in range(1,e):
 
     # F.<x> = PolynomialRing(Zmod(2**NB))
     # f = x**2 - slo * x + n
-    # assert(f(p % 2**NB) == 0) # this also works for q % r
-    # print(f"Quadratic: x**2 - {slo}*x + {n} == 0 % 2**{NB}")
+    # assert(f(p % r) == 0) # this also works for q % r
+    # print(f"Quadratic: x**2 - {slo}*x + {n} == 0 % r")
     # solve quadratic for low bits of p or q
     a = var('a')    
     roots = [int(i[0]) for i in solve_mod([a**2 - slo*a + n == 0], r)]
