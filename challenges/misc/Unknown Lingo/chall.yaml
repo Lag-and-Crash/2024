@@ -1,0 +1,43 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Miscellaneous'
+
+  # The description of the challenge
+  description: 'It seems like this particular message is encoded in another esoteric language'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/lingo.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{wH4t_pR0gR4mM1ng_L4ngUaNg3_1S_th15?}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'the message is not encoded whatsoever, this isn't a crypto question, think outside the box!'
+    requirements: null
+
+  - cost: 50
+    description: 'perhaps the message is in another language?'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Unknown Lingo'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
