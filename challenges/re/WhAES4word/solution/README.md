@@ -71,11 +71,11 @@
 6. As given as a hint from the title, it uses an AES Encryption, which requires Key and IV to decrypt the ciphertext. Explore the classes of the file, and find the variables "kee" and "eyevee".
    ![DotPeek SC3](Kee.png "DotPeek Kee")
    ![DotPeek SC4](EyeVee.png "DotPeek EyeVee")
-   Key in bytes: ```[84,104,105,115,73,115,65,76,101,101,116,75,101,121,33]```
+   Key in bytes: ```[84,104,105,115,73,115,65,76,101,101,116,75,101,121,33,33]```
    IV in bytes: ```[84,104,105,115,73,115,65,76,101,101,116,73,86,64,33,35]```
 7. Turn the bytes into hex (python) (for both Key and IV)
 >   ```python
->   for i in [84,104,105,115,73,115,65,76,101,101,116,75,101,121,33]:
+>   for i in [84,104,105,115,73,115,65,76,101,101,116,75,101,121,33,33]:
 >     print(hex(i))
 >   ``` 
 Output:
@@ -94,6 +94,7 @@ Output:
 > 0x4b
 > 0x65
 > 0x79
+> 0x21
 > 0x21
 > ```
 Key: ```54 68 69 73 49 73 41 4C 65 65 74 4B 65 79 21 21 ``` \
