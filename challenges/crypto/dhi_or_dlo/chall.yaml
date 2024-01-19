@@ -17,7 +17,7 @@ allenge:
   # The files to be given to the participant
   # This should be a list of filepaths relative to the folder this file is in.
   files:
- - dist/app.py
+  - dist/app.py
 
   # The flags for the challenge
   flags:
