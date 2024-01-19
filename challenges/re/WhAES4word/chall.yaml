@@ -1,0 +1,48 @@
+challenge:
+  # The name of the challenge author
+  author: 'leezhiwei'
+
+  # The category of the challenge
+  category: 'Reverse Engineering'
+
+  # The description of the challenge
+  description: 'Hey you, I have a creepy coworker, I think I found his server online... He has an unknown EXE on there, wonder what it does... Can you help me see what it is? The original name is "AEScited.exe"'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'lee8219'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/WhatIsThis.exe
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{H311oY0Uf0undMyS3creTL1ttl3B0y}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 200
+    description: 'Hey, I did some analysis, this seems to be using some sort of CIL (Common Intermediate Language)'
+    requirements: null
+  - cost: 300
+    description: 'Hey, from what I seem you can take a PEEK on this EXE using a took (hint hint Google .NET Peek)'
+    requirements: null
+  - cost: 400
+    description: 'Lastly, dive into the source code, what have my colleague coded... What is he doing?'
+    requirements: null
+  - cost: 500
+    description: 'P.S look at what the Root Namespace calls. (Piece them together)'
+    requirements: null
+
+  # The name of the challenge
+  name: 'WhAES4Word'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
