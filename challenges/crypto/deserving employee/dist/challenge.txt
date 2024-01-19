@@ -1,0 +1,116 @@
+(note: this is a second and improved ver of the challenge. ignore the first ver)
+
+(pls use a monospace font for the challenge, for readability, as this challenge is created and formatted as such)(courier new, consolas, etc)
+
+----------
+QUESTION 1
+----------
+Story:
+you evil boss is firing you for an unknown reason that he won't say. he left behind the reason in a password protected zip file. he gave you a text in the form of gibberish, thinking you will pass it as nonsense and discard it. however, he doesn't know you are an expert cryptographer, and will stand to the challenge
+
+Ciphertext hex:
+7E 73 75 4D 71 60 73 61 7A 4D 74 7D 60 77 64 77 60
+
+Details (for nerds):
+- this is a substitution cipher. no transposition has occurred
+- the cipher has both a block size and key length of 1 byte
+- the cipher uses the electronic code block (ecb) mode of encryption
+- there is no padding and iv. the plaintext's and ciphertext's sizes are the same
+- all characters in the plaintext are found on the keyboard
+
+Details (for starters):
+- this algorithm works by replacing every character in the original text with a different one only, to form the gibberish
+- every character has been converted to its hex equivalent (in sets of 2 hex digits each)
+- if a set of '7A' represents the character 'b', then all sets of '7A' can be replaced by 'b'
+- this is a guessing game. you are to guess what a set of 2 hex digits maps to which character
+- all characters in the original text are found on the keyboard
+
+Requirement:
+decrypt the cipher. find the secret code. the secret code only contains proper words and '_'
+
+Hint:
+notice any patterns? the natural language pattern has not been obscured in this cipher. you can search for the more common hex sets and associate it with the more common English character. if you found a suitable character to represent a set of 1 byte, it will apply to all of the sets of the same byte. to start, the hex character '73' has a plaintext equivalent of 'a'
+
+
+
+
+----------
+QUESTION 2
+----------
+Story:
+your boss is sending a retrenchment package with an instruction to a teller at the bank to transfer $2000 to your account. you intercepted the encrypted message and decide to change it to the highest 4-digit number ($9999) to teach him a lesson
+
+Encrypted hex:
+9E A2 BC A0 C1 CF BC 32 68 EF E4 49 52 E7 38 61 E4 46 5C A2 4C 5A E8 FD 12 E8 4E E6 FC 4D F7 08 46 5D A8 55 4D CE
+
+Details (for nerds):
+- this ciphertext undergone an XOR cipher with an unknown key
+- you are not required to find out the key
+- you are not required to decrypt the ciphertext
+- there is no padding and iv. the plaintext's and ciphertext's sizes are the same
+- the natural language pattern has been obscured very well as the key chosen has a very high key length (same as plaintext length). thus it is not very possible to use that attack
+- all characters in the plaintext are found on the keyboard
+- you know that the first 4 bytes(9E A2 BC A0) of the cipher has a plaintext equivalent of '2000'
+- note: each of the '2000' is encrypted separately, not as a whole. Thus, '2000' = '32 30 30 30' [in hex]
+
+Details (for starters):
+- you know that the first 4 bytes(9E A2 BC A0) has the original text equivalent of '2000'
+- note: each of the '2000' is encrypted separately, not as a whole. Thus, '2000' = '32 30 30 30' [in hex]
+- think about this:
+data XOR password XOR data
+similar to
+3 X 5 X 1/3 == 1 X 5 == 5
+
+- by using the same data acting twice in the equation, you are creating an inverse to the data, cancelling out the original data. this then reveals the password, which is '5'
+- 2 0 0 0 = 32 30 30 30 [in hex]
+- 9 9 9 9 = 39 39 39 39 [in hex]
+- use an online XOR tool for the similar example above
+
+Requirement:
+you are to change the first 4 bytes only(9E A2 BC A0), to a plaintext equivalent of '9999' through the ciphertext without decryption. the whole message will be the answer
+
+Hint:
+- any data that is XORed with itself will result in 0s the length of the data
+- any 0s that is XORed with data of the same length will result in the data
+- except in this case, the 0s are replaced by the actual portions of the key
+- the first byte of the answer is '96'. if you don't get this, try again!
+- below is an example diagram for the above explanation:
+
+[data]	01101010		00000000
+	XOR			XOR
+[key]	11010100	==	11010100	==	11010100 [the original key!]
+	XOR
+[data]	01101010
+
+
+
+
+---------------------
+BREAKING THE PASSWORD
+---------------------
+congratulations! you solved both questions. now, refer to this section to find the secret password
+
+---------------
+----EXAMPLE----
+
+for example, if your answer to first question is:
+i_love_lag_and_crash_2024
+
+and if your answer to second question is:
+AA AA AA AA C1 CF BC 32 68 EF E4 49 52 E7 38 61 E4 46 5C A2 4C 5A E8 FD 12 E8 4E E6 FC 4D F7 08 46 5D A8 55 4D CE
+
+then you need to concatenate both the answers together, like this (note the spaces!):
+i_love_lag_and_crash_2024AA AA AA AA C1 CF BC 32 68 EF E4 49 52 E7 38 61 E4 46 5C A2 4C 5A E8 FD 12 E8 4E E6 FC 4D F7 08 46 5D A8 55 4D CE
+
+run it through a CRC-32 checksum. you should get this(which is the zip file's password):
+49d3aa2f
+
+--END EXAMPLE--
+---------------
+
+you can use the following websites, or any CRC-32 hashing program on your computer to get the checksum:
+- https://cyberchef.org/#recipe=CRC-32_Checksum()&input=W0pVU1QgUkVQTEFDRSBUSElTIFdJVEggWU9VUiBBTlNXRVIgQU5EIEdFVCBUSEUgT1VUUFVUIEJFTE9XXQ&ienc=20127&oenc=20127
+
+- https://codebeautify.org/crc-32-hash-generator?input=[JUST%20REPLACE%20THIS%20WITH%20YOUR%20ANSWER%20AND%20GET%20THE%20OUTPUT%20BELOW]
+
+
