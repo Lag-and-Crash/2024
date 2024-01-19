@@ -5,6 +5,8 @@ Challenge Solution
 3. Upon inspecting said dairy you'll see 3 roblox account id number without the last few digits censored : 544787XXXX along with stating the description starts with LagNCrash ✓
 4. Using roblox api , you are to find the description of roblox accounts in that range that starts with LagNCrash (check solve script) ✓ 
 5. within the descriptions is messages in the format "LagNCrash <msg>" within msg are binary that when converted and combined converts to github link ✓
+^ https://github.com/poopoopeepeesauce
+
 6. go to github telegraphmsg go git commit history and find a to a link to pastebin with hints leading to archival machine and containing the wix website link , first half of flag here ✓ 
 7. heading over to the wix website check the archival machine aka way back machine for the email of the creator stored in a previous archived version of the web. looking at the webpage title aka tab u see the word lookatemail so yea its missing so js archive it  ✓
 8. After getting the email out , send an email to receive and discord Guild ID
