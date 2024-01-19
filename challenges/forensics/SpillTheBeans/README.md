@@ -7,7 +7,7 @@ Zip password: infected
 - **Author:** n00bth3b0x
 - **Discord Username:** n00bth3b0x
 - **Category:** Forensics
-- **Difficulty:** Medium
+- **Difficulty:** Easy
 
 ## Hints
 None
