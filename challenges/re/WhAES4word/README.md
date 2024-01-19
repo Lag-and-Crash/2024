@@ -6,7 +6,7 @@ Reverse Engineering
 ## Description
 ```Hey you, I have a creepy coworker, I think I found his server online... He has an unknown EXE on there, wonder what it does... Can you help me see what it is? The original name is "AEScited.exe"```
 ## Difficulty
-Hard
+Medium (Originally Hard)
 ## Discord
 ```lee8219```
 ## Files
