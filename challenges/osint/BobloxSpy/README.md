@@ -1,6 +1,7 @@
 # [BobloxSpy]
-It utilitse public API calls , archival machines , discord guild lookups , basic coding skills , simple crypto skills as well as a brain.
+You are part of the secret service. An Enemy Spy disguised as a Roblox Developer was entrusted to keep his country's nuclear launch code a secret, but he suffers from short term memory loss. So he decided to stash it away!!!. After you caught him , he failed to provide any information upon background research you find this.
 
+https://www.roblox.com/games/15966463305/LNC4RobloxDevSpys-Place
 ## Summary
 - **Author:** [Sora]
 - **Discord Username:** [Sora_HEHE]
