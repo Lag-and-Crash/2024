@@ -1,0 +1,43 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'I love listening to music! did you know that while MP3 files are compressed and smaller, while WAV files are uncompressed and larger? Many people can't hear the difference but I certainly can!'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/audiophile.wav
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{4ud10_5t3ng0_15_fun}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'theres something fishy in the first part of the audio'
+    requirements: null
+
+  - cost: 50
+    description: 'some bits are less important than others'
+    requirements: null
+
+  # The name of the challenge
+  name: 'Audiophile'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
