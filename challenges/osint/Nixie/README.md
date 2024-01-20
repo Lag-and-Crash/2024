@@ -11,7 +11,7 @@ You should submit: LNC24{this_is_flag-1_18_35.193_N-105_51_19.0794_E}
 - **Author:** n00bth3b0x
 - **Discord Username:** n00bth3b0x
 - **Category:** OSINT
-- **Difficulty:** Hard
+- **Difficulty:** Medium
 
 ## Hints
 
