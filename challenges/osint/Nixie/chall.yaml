@@ -13,7 +13,7 @@ challenge:
   You should submit: LNC24{this_is_flag-1_18_35.193_N-105_51_19.0794_E}'
 
   # The difficulty of the challenge
-  difficulty: 'Hard'
+  difficulty: 'Medium'
 
   # The discord username of the author
   discord: 'n00bth3b0x'
