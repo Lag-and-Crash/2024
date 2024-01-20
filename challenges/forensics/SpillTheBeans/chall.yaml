@@ -8,7 +8,7 @@ challenge:
   description: 'A user reported receiving an email that he thought appeared suspicious. The email has a word file attached and we wonder if the file is clean or contains attack code. The analytics center does not have the ability to look into this matter. Can you check for any harmful agents?'
 
   # The difficulty of the challenge
-  difficulty: 'Easy'
+  difficulty: 'Medium'
 
   # The discord username of the author
   discord: 'n00bth3b0x'
