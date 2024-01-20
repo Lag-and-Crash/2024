@@ -1,0 +1,3 @@
+FROM httpd:2.4.55
+
+COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf

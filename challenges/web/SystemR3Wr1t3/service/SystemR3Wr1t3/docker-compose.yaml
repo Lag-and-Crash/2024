@@ -1,0 +1,18 @@
+
+services:
+  reverse-proxy:
+    build: ./proxy
+    ports:
+      - "8123:80"
+    depends_on:
+      - backend-server
+    read_only: true
+
+  apache-server:
+    build: ./app
+    volumes:
+      - type: tmpfs
+        target: /tmp
+        tmpfs:
+          size: 4096
+    read_only: true
