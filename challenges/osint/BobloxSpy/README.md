@@ -6,7 +6,7 @@ https://www.roblox.com/games/15966463305/LNC4RobloxDevSpys-Place
 - **Author:** Sora
 - **Discord Username:** Sora_HEHE
 - **Category:** Osint
-- **Difficulty:** INSANE
+- **Difficulty:** Hard
 
 ## Hints
 - `look up roblox user api` (100 points)

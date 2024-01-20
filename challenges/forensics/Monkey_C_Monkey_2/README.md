@@ -6,10 +6,10 @@ Unfortunately, we were unable to locate any identify the malicious traffic in th
 Could you help us find out how to decrypt our files?
 
 ## Summary
-- **Author:** [Zavier]
+- **Author:** [gatari]
 - **Discord Username:** [gatari]
-- **Category:** [Reverse]
-- **Difficulty:** [Hard]
+- **Category:** [Forensics]
+- **Difficulty:** [Medium]
 
 ## Hints
 1. https://github.com/BC-SECURITY/Malleable-C2-Profiles/blob/master/Normal/reddit.profile
