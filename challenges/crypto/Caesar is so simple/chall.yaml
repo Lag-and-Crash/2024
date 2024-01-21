@@ -1,0 +1,18 @@
+challenge:
+  author: "SpeedFox198"
+  category: "Crypto"
+  name: "Caesar is so simple"
+  description: "Is Caesar Cipher too simple for you? Don't worry, I made it harder :D"
+  difficulty: "Medium"
+  discord: "speedfox198"
+
+  files:
+  - dist/chall.py
+  - dist/output.txt
+
+  flags:
+  - flag: LNC{iT_c4n't_b3!_w4s_7h@t_5t1ll_t00_sImp13??}
+    regex: false
+
+  hints: null
+  requirements: null
