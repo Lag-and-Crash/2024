@@ -12,4 +12,4 @@ Is Caesar Cipher too simple for you? Don't worry, I made it harder :D
 - [`output.txt`](./dist/output.txt)
 
 ## Flags
-- `LNC{iT_c4n't_b3!_w4s_7h@t_5t1ll_t00_sImp13??}` (static)
+- `LNC24{iT_c4n't_b3!_w4s_7h@t_5t1ll_t00_sImp13??}` (static)

@@ -11,7 +11,7 @@ challenge:
   - dist/output.txt
 
   flags:
-  - flag: LNC{iT_c4n't_b3!_w4s_7h@t_5t1ll_t00_sImp13??}
+  - flag: LNC24{iT_c4n't_b3!_w4s_7h@t_5t1ll_t00_sImp13??}
     regex: false
 
   hints: null
