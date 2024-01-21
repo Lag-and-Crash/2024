@@ -1,34 +1,29 @@
 challenge:
   # The name of the challenge author
-  author: 'Warri'
+  author: 'Carl Voller'
 
   # The category of the challenge
-  category: 'Crypto'
+  category: 'Web'
 
   # The description of the challenge
-  description: "Hash collisions!"
+  description: I am about to Rewrite history
 
   # The difficulty of the challenge
-  difficulty: 'Easy'
+  difficulty: 'Hard'
 
   # The discord username of the author
-  discord: 'warriii'
-
-  # The files to be given to the participant
-  # This should be a list of filepaths relative to the folder this file is in.
-  files:
-  - dist/app.py
+  discord: 'portatolova'
 
   # The flags for the challenge
   flags:
-  - flag: LNC24{b1twI5e_aNd_i5_jU5t_b1tm4sKiNg_98bd61c32def}
+  - flag: LNC24{expl01t1ng_cRLf_1nj3cti0nS_nm0asd8}
     regex: false
 
   # The hints for the challenge
   hints: null
   
   # The name of the challenge
-  name: 'Bit Collider'
+  name: 'SystemR3Wr1t3'
 
   # The requirements for the challenge
   # This should be a list of challenge names that the user must have completed before
@@ -40,7 +35,11 @@ challenge:
 services:
 
   # The name of the service
-  bit-collider:
-    name: bit-collider
-    path: service/Bit_Collider
-    port: '1337'
+  apache-server:
+    name: apache-server
+    path: service/app
+    
+  reverse-proxy:
+    name: reverse-proxy
+    path: service/proxy
+    

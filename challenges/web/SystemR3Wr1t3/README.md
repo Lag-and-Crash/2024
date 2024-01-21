@@ -1,20 +1,21 @@
-# Bit Collider
-Hash collisions!
+# SystemR3Wr1t3
+ I am about to Rewrite history
 
 ## Summary
-- **Author:** [Warri]
-- **Discord Username:** [warriii]
-- **Category:** [Crypto]
-- **Difficulty:** [Easy]
+- **Author:** [Carl Voller]
+- **Discord Username:** [Portatolova]
+- **Category:** [Web]
+- **Difficulty:** [Hard]
 
 ## Hints
 
 ## Files
-- [`Dockerfile`](./dist/app.py)
+- [`index.php`](./dist/index.php)
 
 ## Services
-- [`Bit_Collider`](./service/Bit_Collider) (port 1337)
+- [`apache_server`](./service/app)
+- [`reverse_proxy`](./service/proxy) (Port 8123)
 
 
 ## Flags
-- `LNC24{b1twI5e_aNd_i5_jU5t_b1tm4sKiNg_98bd61c32def}` (static)
+- `LNC24{expl01t1ng_cRLf_1nj3cti0nS_nm0asd8}` (static)
