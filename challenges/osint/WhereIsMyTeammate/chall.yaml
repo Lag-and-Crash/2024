@@ -17,7 +17,8 @@ challenge:
     discord: 'n00bth3b0x'
 
       files:
-  - 
+      files: null
+
     flags:
     - flag: LNC24{n0_m0r3_c@g3$_54e644bfc4ecfb090d93b8509af3c202}
     regex: false
