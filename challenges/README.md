@@ -26,3 +26,5 @@ This directory contains all challenges.
 | [WhAES4Word](<./reverse engineering/WhAES4Word>) | Hey you, I have a cr... | Reverse engineering | Hard | leezhiwei |
 | [Lucky Plaza](<./pwn/Lucky Plaza>) | This plaza is full o... | Pwn | Hard | flyyee |
 | [Boblox](<./osint/Boblox>) | You are part of the ... | Osint | Hard | Sora |
+| [Wabbit](<./re/Wabbit>) | A bash shell running locally to my browser? Wow! | Insane | Carl Voller |
+| [SystemR3Wr1t3](<./web/SystemR3Wr1t3>) | I am about to Rewrite history | Hard | Carl Voller |
