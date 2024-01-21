@@ -2,10 +2,10 @@
 A bash shell running locally to my browser? Wow!
 
 ## Summary
-- **Author:** [Carl Voller]
-- **Discord Username:** [Portatolova]
-- **Category:** [RE]
-- **Difficulty:** [Insane]
+- **Author:** Carl Voller
+- **Discord Username:** Portatolova
+- **Category:** RE
+- **Difficulty:** Insane
 
 ## Hints
 

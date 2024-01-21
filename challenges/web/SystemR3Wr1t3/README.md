@@ -2,10 +2,10 @@
  I am about to Rewrite history
 
 ## Summary
-- **Author:** [Carl Voller]
-- **Discord Username:** [Portatolova]
-- **Category:** [Web]
-- **Difficulty:** [Hard]
+- **Author:** Carl Voller
+- **Discord Username:** Portatolova
+- **Category:** Web
+- **Difficulty:** Hard
 
 ## Hints
 

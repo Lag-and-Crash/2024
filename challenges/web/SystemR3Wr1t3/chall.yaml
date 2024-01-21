@@ -38,8 +38,20 @@ services:
   apache-server:
     name: apache-server
     path: service/app
+    port: '80'
+    extras:
+      volumes:
+        - type: tmpfs
+          target: /tmp
+          tmpfs:
+            size: 4096
+      read_only: true
     
   reverse-proxy:
     name: reverse-proxy
     path: service/proxy
+    extras:
+      depends_on:
+        - apache-server
+      read_only: true
     

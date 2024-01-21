@@ -5,7 +5,7 @@ services:
     ports:
       - "8123:80"
     depends_on:
-      - backend-server
+      - apache-server
     read_only: true
 
   apache-server:
