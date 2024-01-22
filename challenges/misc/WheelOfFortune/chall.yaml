@@ -1,0 +1,33 @@
+challenge:
+  # The name of the challenge author
+  author: 'n00bth3b0x'
+
+  # The category of the challenge
+  category: Misc
+  # The description of the challenge
+  description: 'Who is the winner of Wheel of Fortune?'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'n00bth3b0x'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/WheelOfFortune.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{D0_n0t_4ll0w_th3m_p34c3_2687f2b41646cc94394c06208d2444df}
+    regex: false
+
+  hints:
+  - cost: 0
+    description: ''
+    requirements: null
+  
+  name: 'WheelOfFortune'
+
+  requirements: null
