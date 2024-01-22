@@ -1,0 +1,32 @@
+challenge:
+  author: 'n00bth3b0x'
+
+  category: Forensics
+  description: 'The attacker stole secret military zone'
+
+  difficulty: 'Insane'
+
+  discord: 'n00bth3b0x'
+
+  files:
+  - https://mega.nz/file/690QBArC#yjCywmo47o-NQG5ew5HzlHytPwovdd6B5Jd4vR6FOwo
+
+  flags:
+  - flag: LNC24{B3h0ld_th3_tru3_0rd3r_973cfd3332c5d3ff35c3754d6c338cc4}
+    regex: false
+
+  hints:
+  - cost: 0
+    description: ''
+    requirements: null
+  
+  name: 'Secret_Military_Zone'
+
+  requirements: null
+
+services:
+
+  container-name:
+    name: 
+    path: 
+    port: ''
