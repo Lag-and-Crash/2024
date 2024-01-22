@@ -1,0 +1,48 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Cryptography'
+
+  # The description of the challenge
+  description: 'Viva la Revolution my friend! we shall overtake the government!'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/code.py
+  - dist/output.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC2024{pR1m3s_4eva!}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'this is a prime time for celebration my friend!'
+    requirements: null
+
+  - cost: 50
+    description: 'i think there might be a couple of databases that have not been factored out'
+    requirements: null
+
+  - cost: 50
+    description: 'he was muttering a name? euler was it?'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Viva la Revolution!'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

@@ -1,0 +1,43 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'In the depths of the ocean, fish in general, are hard to come by due to global warming. However, I just found a red herring, with a weird brusied QR code attached on its skin? I don't assume it could be of use to you?'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/qrcode.jpg
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{d0nT_f4LL_4_r3d_h3rR1nG5!}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'Why a red herring?'
+    requirements: null
+
+  - cost: 50
+    description: 'doesn't the file seem way too big for a jpg?'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'The Elusive Red Herring'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
