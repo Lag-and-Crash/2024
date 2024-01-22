@@ -14,3 +14,4 @@ This directory contains challenges related to Re.
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [WhAES4Word](<./WhAES4Word>) | Hey you, I have a cr... | Hard | leezhiwei |
+| [Wabbit](<./Wabbit>) | A bash shell running locally to my browser? Wow! | Insane | Carl Voller |
