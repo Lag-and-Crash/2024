@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y sqlite3
 WORKDIR /app
 
 # Copy the contents of the service folder into the Docker container
-COPY service/ .
+COPY www/ .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt

@@ -35,10 +35,7 @@ challenge:
 services:
 
   # The name of the service
-  flask-app:
+  This_WEB_Too_Simple:
     name: This_WEB_Too_Simple
-    build:
-      context: .
-      dockerfile: Dockerfile  
-    ports:
-      - "5000:5000"
+    path: service/This_WEB_Too_Simple
+    port: '5000'
