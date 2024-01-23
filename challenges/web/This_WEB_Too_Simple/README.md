@@ -12,7 +12,7 @@ A very simple web challenge
 None
 
 ## Files
-- `app.py`: The main Flask application file.
+- [app](./dist/app.py)
 
 ## Services
 - [Flask](./service/This_WEB_Too_Simple/)
