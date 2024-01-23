@@ -23,10 +23,7 @@ challenge:
   - flag: LNC24{D0_n0t_4ll0w_th3m_p34c3_2687f2b41646cc94394c06208d2444df}
     regex: false
 
-  hints:
-  - cost: 0
-    description: ''
-    requirements: null
+  hints: null
   
   name: 'WheelOfFortune'
 
