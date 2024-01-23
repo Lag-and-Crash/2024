@@ -12,7 +12,7 @@ A very simple web challenge
 None
 
 ## Files
-- [app](./dist/app.py)
+- [app.py](./dist/app.py)
 
 ## Services
 - [Flask](./service/This_WEB_Too_Simple/)
