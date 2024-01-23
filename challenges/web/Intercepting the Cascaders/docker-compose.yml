@@ -1,0 +1,6 @@
+version: '2.4'
+services:
+  Intercepting_the_Cascaders:
+    build: .
+    ports:
+      - 3006:5000
