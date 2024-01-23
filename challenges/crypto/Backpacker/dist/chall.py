@@ -3,6 +3,7 @@ from random import randint
 from Crypto.Util.number import isPrime
 from math import gcd
 
+# https://en.wikipedia.org/wiki/Merkle%E2%80%93Hellman_knapsack_cryptosystem
 def gen_pub(n):
     W = []
     s = 0
