@@ -16,7 +16,7 @@ challenge:
     regex: false
 
   hints:
-  - cost: null
+  - cost: 0
     description: ''
     requirements: null
   
