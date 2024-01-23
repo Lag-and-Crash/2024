@@ -2,41 +2,38 @@
 
 ## Summary
 
-This write-up outlines the steps taken to exploit a web application to gain unauthorized admin access. The process involved discovering a `robots.txt` file, exploiting a SQL injection vulnerability on the login page, extracting database schema and credentials, extracting a secret key through an API endpoint, and forging an admin JWT token to access the admin page.
+This write-up demonstrates the process of exploiting a web application to gain unauthorized admin access. The strategy involves using a SQL injection (SQLi) to bypass login authentication, extracting a secret key, and then modifying a JWT token to escalate privileges to an admin role.
 
 ## Steps
 
 ### 1. Discovery of `robots.txt`
 
-The `robots.txt` file was found at the root of the web server. It contained the following entries:
+The `robots.txt` file, located at the web server's root, contained directives that hinted at potential attack vectors:
 
-```
+```plaintext
 User-agent: *
 Disallow: /
 Disallow: /login
 Disallow: /admin
-Allow: /api*
 ```
-
-The disallowance of the `/login` and `/admin` paths indicated restricted areas, while the allowance of `/api*` paths suggested a potential point of interaction.
 
 ### 2. SQL Injection and Login
 
-An SQL injection vulnerability was identified on the login page (`login.html`). There are two ways to exploit this vulnerability:
+A SQL injection vulnerability was identified on the login page (`login.html`). The vulnerability is exploited as follows:
 
 #### Manual SQL Injection
 
-By manually entering a SQL injection payload into the `username` and `password` fields, authentication can be bypassed:
+By entering a SQL injection payload in the login fields, authentication can be bypassed. For instance:
 
-```
-malicious_user' OR '1'='1
+```sql
+' OR '1'='1' --
 ```
 
-This payload allows logging in with a non-admin user token.
+This payload logs in as a non-admin user by bypassing the authentication check.
 
 #### Automated SQL Injection with sqlmap
 
-Alternatively, the SQL injection vulnerability can be exploited using sqlmap, an automated tool that detects and exploits SQL injection flaws. The following sqlmap command can be used to dump the contents of the `users` table:
+Alternatively, sqlmap can be used to exploit the vulnerability and extract database information:
 
 ```bash
 sqlmap -r request.txt --ignore-code=401 -p username -D SQLite_masterdb -T users --dump
@@ -67,20 +64,14 @@ Table: users
 +----+----------+----------+
 ```
 
-### 3. Token and Secret Key
+### 3. Extracting the Secret Key
 
-With the non-admin token acquired after SQL injection, the `/api/key` endpoint was accessed. This endpoint returned a secret key that is unique and changes with each application start. For this session, the retrieved key was:
+Post successful SQLi login, the application reveals a key, which is the secret used for signing JWT tokens. This key can be found in the application's response.
 
-```
-AeApKT1qJob7hrqgBtyjslTTCqDprHIO
-```
+### 4. Modifying the JWT Token
 
-Using this key, a JWT token was decoded and forged for admin access.
-
-### 4. Forging the Admin Token
-
-The JWT token's signature was verified and altered on [jwt.io](https://jwt.io) to change the user role from non-admin to admin.
+With the secret key, visit [jwt.io](https://jwt.io) and paste the token in the Encoded section. Modify the `role` from non-admin to admin and use the secret key to regenerate a valid signature.
 
 ### 5. Accessing the Admin Page
 
-With the forged admin token, access was gained to the `/admin` page, where the flag was successfully retrieved.
+With the modified admin JWT token, send a request to the `/admin` page. The admin page should now be accessible, revealing the flag.

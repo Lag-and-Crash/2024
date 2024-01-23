@@ -3,7 +3,7 @@
 FROM python:3.8-slim
 
 # Install sqlite3
-RUN apt-get update && apt-get install -y sqlite3 && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y sqlite3
 
 # Set the working directory in the Docker container to /app
 WORKDIR /app
