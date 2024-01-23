@@ -13,6 +13,8 @@ None
 
 ## Files
 - `app.py`: The main Flask application file.
+- `create_db.py`: Create database.
+- `start.sh`: Run create_db.py and flask app.
 - `index.html`: The main landing page of the web challenge.
 - `login.html`: The login page that issues tokens.
 - `robots.txt`: A file that might have more than just disallow rules.
