@@ -15,12 +15,8 @@ challenge:
   - flag: LNC24{B3h0ld_th3_tru3_0rd3r_973cfd3332c5d3ff35c3754d6c338cc4}
     regex: false
 
-  hints:
-  - cost: null
+  hints: null
   
   name: 'Secret_Military_Zone'
 
-  container-name:
-    name: 
-    path: 
-    port: ''
+  requirements: null
