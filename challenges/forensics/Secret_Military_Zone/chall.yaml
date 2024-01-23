@@ -16,15 +16,11 @@ challenge:
     regex: false
 
   hints:
-  - cost: 0
+  - cost: null
     description: ''
     requirements: null
   
   name: 'Secret_Military_Zone'
-
-  requirements: null
-
-services:
 
   container-name:
     name: 
