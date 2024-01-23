@@ -16,9 +16,7 @@ challenge:
     regex: false
 
   hints:
-  - cost: 0
-    description: ''
-    requirements: null
+  - cost: null
   
   name: 'Secret_Military_Zone'
 
