@@ -31,7 +31,7 @@ challenge:
     requirements: null
 
   - cost: 50
-    description: 'doesnt the file seem way too big for a jpg?'
+    description: 'doesn''t the file seem way too big for a jpg?'
     requirements: null
   
   # The name of the challenge
