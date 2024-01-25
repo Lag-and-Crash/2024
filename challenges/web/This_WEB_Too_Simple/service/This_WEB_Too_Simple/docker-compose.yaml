@@ -1,6 +1,0 @@
-
-services:
-  this_web_too_simple:
-    build: ./app
-    ports:
-      - "5000:5000"
