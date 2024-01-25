@@ -27,7 +27,7 @@ challenge:
   # The hints for the challenge
   hints:
   - cost: 50
-    description: 'the message is not encoded whatsoever, this isn't a crypto question, think outside the box!'
+    description: 'the message is not encoded whatsoever, this isn''t a crypto question, think outside the box!'
     requirements: null
 
   - cost: 50

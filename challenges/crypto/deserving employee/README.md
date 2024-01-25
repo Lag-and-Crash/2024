@@ -7,9 +7,6 @@ crazy boss fires you, prove you deserve to stay
 - **Category:** Cryptography
 - **Difficulty:** Medium
 
-## Hints
-
-
 ## Files
 - [`challenge.txt`](./dist/challenge.txt)
 - [`secret.zip`](./dist/secret.zip)

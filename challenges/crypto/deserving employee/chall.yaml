@@ -26,7 +26,7 @@ challenge:
     regex: false
 
   # The hints for the challenge
-
+  hints: null
   
   # The name of the challenge
   name: 'deserving employee'
