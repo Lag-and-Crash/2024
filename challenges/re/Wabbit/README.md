@@ -4,7 +4,7 @@ A bash shell running locally to my browser? Wow!
 ## Summary
 - **Author:** Carl Voller
 - **Discord Username:** Portatolova
-- **Category:** RE
+- **Category:** Reverse Engineering
 - **Difficulty:** Insane
 
 ## Hints
