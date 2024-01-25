@@ -16,7 +16,7 @@ I love listening to music! did you know that while MP3 files are compressed and 
 
 ## Files
 
-- [audiophile.wav](./dist/audiophile.wav)
+- [audiophile.txt](./dist/audiophile.txt)
 
 ## Flags
 

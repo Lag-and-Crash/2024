@@ -17,7 +17,7 @@ challenge:
   # The files to be given to the participant
   # This should be a list of filepaths relative to the folder this file is in.
   files:
-  - dist/audiophile.wav
+  - dist/audiophile.txt
 
   # The flags for the challenge
   flags:
