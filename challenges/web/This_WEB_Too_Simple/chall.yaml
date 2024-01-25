@@ -37,5 +37,5 @@ services:
   # The name of the service
   This_WEB_Too_Simple:
     name: This_WEB_Too_Simple
-    path: service/This_WEB_Too_Simple
+    path: service/app
     port: '5000'
