@@ -1,0 +1,15 @@
+challenge:
+  author: Chen Heyu
+  category: RE
+  description: 'I am lonely, tell me something nice to make me happy and I will give you the flag'
+  difficulty: Easy
+  discord: _housefly_
+  files: dist/lonely.exe
+
+
+  flags:
+  - flag: LNC24{cPP_1s_sUp3r_c0Ol}
+  hints: null
+  name: lonely
+  requirements: null
+services: null
