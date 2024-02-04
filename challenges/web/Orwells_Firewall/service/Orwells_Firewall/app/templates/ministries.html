@@ -1,0 +1,25 @@
+{% extends "ministry_base.html" %} {% block content %}
+<h1>Orwell's Ministries</h1>
+<p>
+    Welcome, Party member. This is the onboarding portal, designed to educate
+    and familiarize you with the core ministries that uphold our great society.
+    Each ministry has a dedicated role, ensuring stability, truth, love,
+    abundance, and peace for every citizen. Embrace your duty, understand the
+    functions, and serve Big Brother loyally.
+</p>
+<div class="ministry-list">
+    {% for ministry, details in ministries.items() %}
+    <a href="/mini?ministry={{ ministry }}" class="ministry-link">
+        <div class="ministry-item">
+            <i class="fas {{ details['icon'] }} ministry-icon"></i>
+            <div class="ministry-content">
+                <div class="ministry-title">{{ details['name'] }}</div>
+                <div class="ministry-description">
+                    {{ details['description'] }}
+                </div>
+            </div>
+        </div></a
+    >
+    {% endfor %}
+</div>
+{% endblock %}
