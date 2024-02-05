@@ -17,4 +17,4 @@ None
 - [`Flask`](./service/Orwells_Firewall/app/) (Port 8969)
 
 ## Flags
-- `LNC2024{w3lc0m3_70_7h3_br07h3rh00d}` (static)
+- `LNC24{w3lc0m3_70_7h3_br07h3rh00d}` (static)
