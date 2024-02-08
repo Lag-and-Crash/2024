@@ -4,7 +4,9 @@ challenge:
   description: 'I am lonely, tell me something nice to make me happy and I will give you the flag'
   difficulty: Easy
   discord: _housefly_
-  files: dist/lonely.exe
+  files:
+  - dist/lonely.exe
+
 
 
   flags:
