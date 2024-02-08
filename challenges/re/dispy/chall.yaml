@@ -1,0 +1,38 @@
+challenge:
+  # The name of the challenge author
+  author: 'Warri'
+
+  # The category of the challenge
+  category: 'RE'
+
+  # The description of the challenge
+  description: 'Help my pyton code no wrk!! I heard you guys are really good with assembly so Ima send it 2 u... I used dis online tool called pycdas i think...'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'warriii'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/my_pyton_asembly_code.txt
+  - dist/my_pyton_code.cpython-38.pyc
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{4n_1nTr0_2_eUl3Rs_t0ti3Nt_fuNct!On}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'dispy'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
