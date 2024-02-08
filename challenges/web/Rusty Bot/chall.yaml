@@ -33,25 +33,25 @@ challenge:
 # The services for the challenge
 services:
   chall:
-    container_name: ${SERVER_ALIAS}
+    container_name: chall
     build: app
     restart: always
     ports:
-      - ${PUBLIC_PORT}:${SERVER_PORT}
+      - 1339:8000
     environment:
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-      FLAG: ${FLAG}
-      BOT_PORT: ${BOT_PORT}
-      BOT_ALIAS: ${BOT_ALIAS}
-      SERVER_PORT: ${SERVER_PORT}
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      FLAG: LNC24{leek_8fc7253e5d7c633e}
+      BOT_PORT: 8001
+      BOT_ALIAS: admin
+      SERVER_PORT: 8000
   admin:
-    container_name: ${BOT_ALIAS}
+    container_name: admin
     build: admin
     restart: always
     expose:
-      - ${BOT_PORT}
+      - 8001
     environment:
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-      BOT_PORT: ${BOT_PORT}
-      SERVER_ALIAS: ${SERVER_ALIAS}
-      SERVER_PORT: ${SERVER_PORT}
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      BOT_PORT: 8001
+      SERVER_ALIAS: chall
+      SERVER_PORT: 8000
