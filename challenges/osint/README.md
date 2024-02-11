@@ -8,9 +8,9 @@ This directory contains challenges related to Osint.
 | Medium | 1 |
 | Hard | 1 |
 | Insane | 0 |
-| Total | 2 |
+| Total | 3 |
 
-## Challenges (2 total)
+## Challenges (3 total)
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [Boblox](<./Boblox>) | You are part of the ... | Hard | Sora |
