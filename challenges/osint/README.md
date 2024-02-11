@@ -4,7 +4,7 @@ This directory contains challenges related to Osint.
 ## Difficulty Distribution
 | Difficulty | Number of Challenges |
 | ---------- |:--------------------:|
-| Easy | 0 |
+| Easy | 1 |
 | Medium | 0 |
 | Hard | 1 |
 | Insane | 0 |
@@ -14,3 +14,4 @@ This directory contains challenges related to Osint.
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [Boblox](<./Boblox>) | You are part of the ... | Hard | Sora |
+| [Free Food](<./Free Food>) | Free Ramen??! SIGN M... | Easy | SpeedFox198 |
