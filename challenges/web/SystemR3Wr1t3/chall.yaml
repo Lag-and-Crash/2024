@@ -1,0 +1,58 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'Web'
+
+  # The description of the challenge
+  description: I am about to Rewrite history
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{expl01t1ng_cRLf_1nj3cti0nS_nm0asd8}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'SystemR3Wr1t3'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  apache-server:
+    name: apache-server
+    path: service/app
+    port: '80'
+    extras:
+      volumes:
+        - type: tmpfs
+          target: /tmp
+          tmpfs:
+            size: 4096
+      read_only: true
+    
+  reverse-proxy:
+    name: reverse-proxy
+    path: service/proxy
+    port: null
+    extras:
+      depends_on:
+        - apache-server
+      read_only: true
+    

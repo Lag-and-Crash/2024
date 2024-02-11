@@ -1,0 +1,36 @@
+challenge:
+  # The name of the challenge author
+  author: 'Warri'
+
+  # The category of the challenge
+  category: 'RE'
+
+  # The description of the challenge
+  description: 'With the recent rise of hacker group L1N3, they have released a binary for recruitment targetting potential candidates to fill their ranks! Can you deduce the password and sneak in as a mole in their ranks?'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'warriii'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/trial.exe
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{g4us51an_3Lim1N4tiOn}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'L1N3'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

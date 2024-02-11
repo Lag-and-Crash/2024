@@ -7,10 +7,11 @@ This directory contains challenges related to Re.
 | Easy | 0 |
 | Medium | 0 |
 | Hard | 1 |
-| Insane | 0 |
-| Total | 1 |
+| Insane | 1 |
+| Total | 2 |
 
-## Challenges (1 total)
+## Challenges (2 total)
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
+| [Wabbit](<./Wabbit>) | A bash shell running... | Insane | Carl Voller |
 | [WhAES4Word](<./WhAES4Word>) | Hey you, I have a cr... | Hard | leezhiwei |

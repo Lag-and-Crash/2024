@@ -1,0 +1,45 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Cryptography'
+
+  # The description of the challenge
+  description: 'comrade! I think our fellow resistance fighters made a mistake, they encrypted their message using their public keys instead of ours! What are we going to do?'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/code.py
+  - dist/output.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{1_n33d_m0r3_buLL3ts}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'romeo sierra alpha'
+    requirements: null
+
+  - cost: 50
+    description: 'factorize N given d'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Resistance Fighters'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+

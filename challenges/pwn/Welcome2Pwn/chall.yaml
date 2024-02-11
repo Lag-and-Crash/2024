@@ -1,0 +1,22 @@
+challenge:
+  author: Kaligula 
+  category: Pwn
+  description: What better way to learn pwn than to go on a trip to the beach? (Because there are shells!) 
+  difficulty: Easy
+  discord: kaligula_armblessed
+
+  # note: dist files are required for this challenge
+  files:
+  - ./dist/welcome
+  - ./dist/welcome.c
+  flags:
+  - flag: LNC24{C0MPU73R_G0_brRrRRrRRRRRRrrRrRRRrRrRrRRrRRrRRRRRrRrR}
+    regex: false
+  hints: null
+  name: Welcome2Pwn!
+  requirements: null
+services:
+  welcome:
+    name: welcome
+    path: service/welcome
+    port: '1337'

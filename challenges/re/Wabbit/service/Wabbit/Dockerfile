@@ -1,0 +1,10 @@
+FROM node:latest
+
+WORKDIR /app
+COPY ./frontend .
+
+RUN npm ci
+
+# USE THE DEV SERVER. DO NOT CHANGE THIS TO THE PRODUCTION SERVER
+CMD npm run dev
+EXPOSE 8888
