@@ -1,0 +1,32 @@
+{
+  "name": "KillCode-Decryptor",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "e51908d2-1b17-44db-a709-17d6af6eb5bd",
+    "appType": "app",
+    "appDisplayName": "KillCode-Decryptor",
+    "wipeColor": "#00AA00",
+    "requestedPermissions": [
+      "access_location",
+      "run_background"
+    ],
+    "buildTargets": [
+      "atlas"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "zaes-js": "^2.1.0"
+  }
+}
