@@ -1,51 +1,33 @@
-# This file represents the base specification of your challenge. It is used by
-# other tools to install and deploy your challenge.
+challenge:
+  # The name of the challenge author
+  author: 'Etitg-liau'
 
-# Required sections
-name: InversXin
-author: Peter
-category: pwn
-description: Do you know inversing is the same as reversing too much text? Everything is given to you, just slowly find it.
-value: 500
-type: standard
+  # The category of the challenge
+  category: 'pwn'
 
-# The extra field provides additional fields for data during the install/sync commands/
-# Fields in extra can be used to supply additional information for other challenge types
-# For example the follow extra field is for dynamic challenges. To use these following
-# extra fields, set the type to "dynamic" and uncomment the "extra" section below
-# extra:
-#     initial: 500
-#     decay: 100
-#     minimum: 50
+  # The description of the challenge
+  description: 'Do you know inversing is the same as reversing too much text? A random number generator and a password is given to you, just slowly solve it.'
 
-# Optional settings
+  # The difficulty of the challenge
+  difficulty: 'Medium'
 
-# connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
+  # The discord username of the author
+  discord: 'yhwhc'
 
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/BinX.bin
 
-# Flags specify answers that your challenge use. You should generally provide at least one.
-# Can be removed if unused
-# Accepts strings or dictionaries of CTFd API data
-flags:
-    # A static case sensitive flag
-    - LNC24{R!3v@3r5#eDU$See?%}
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{R!3v@3r5#eDU$See?%}
+    regex: false
 
-# Topics are used to help tell what techniques/information a challenge involves
-# They are generally only visible to admins
-# Accepts strings
-topics:
-    - buffer overflow
-    - Reverse Text
-    - Cryptography
-    
-# Provide paths to files from the same directory that this file is in
-# Accepts strings
-files:
-    - distrib/BinX.bin
+  # The name of the challenge
+  name: 'InversXin'
 
-
-
-# The state of the challenge.
-# If the field is omitted, the challenge is visible by default.
-# If provided, the field can take one of two values: hidden, visible.
-state: hidden
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
