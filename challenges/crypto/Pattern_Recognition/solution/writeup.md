@@ -22,3 +22,12 @@
         *Looking at the second pair 'nÜ'*
         *The first character 'n' has unicode value 110. The second character is 'Ü' which has unicode value 220 (110 x 2)*
 5. With this, the player can create a script to rotate through the letters of each pair such that the unicode value of the second character is twice the unicode value of the first. An example script is provided as solve.py in the solution files
+
+# Alternate Solution:
+After steps 1 and 2 from above
+3. Looking at the unicode value of each letter, the player can see that in the first pair of all the strings, the difference between the 2 characters is 108.
+    - Ciphertext 1, First pair:     k×    unicode values: 107, 215    difference: 215 - 107 = 108
+    - Ciphertext 2, First pair:     dÐ    unicode values: 100, 208    difference: 208 - 100 = 108
+    - Ciphertext 3, First pair:     eÑ    unicode values: 101, 209    difference: 209 - 101 = 108
+4. Looking at the unicode table, the character with value 108 is 'l'. This happens to be the first letter of the flag. (The player should already know the flag will start with lowercase 'lnc24{'
+5. The player can then repeat the subtraction for all the values to obtain the flag.
