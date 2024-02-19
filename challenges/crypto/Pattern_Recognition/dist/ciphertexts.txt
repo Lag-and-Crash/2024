@@ -1,0 +1,10 @@
+The following 3 ciphertexts were generated from the same script and using the same plaintext
+
+1. k× dÒ aÄ $V (\ lç iÛ [À jà 1d qã nâ +\ lÚ `Ç R± qã %Y bÐ X¼ /_ ]Ê P¯ hÚ (X dØ V· 6m fÏ `Ï lÚ oâ |ù
+2. dÐ cÑ bÅ 0b &Z oê bÔ ]Â hÞ -` lÞ dØ #T _Í ]Ä T³ pâ -a _Í cÇ /_ dÑ ]¼ kÝ $T dØ U¶ 1h hÑ kÚ lÚ kÞ {ø
+3. eÑ kÙ Z½ )[ )] rí fØ `Å mã -` qã má #T kÙ _Æ Q° bÔ .b `Î Y½ /_ hÕ S² pâ *Z sç [¼ 0g YÂ jÙ _Í lß z÷
+
+The plaintext is all in lowercase
+The flag is the plaintext converted all to uppercase
+
+Let's see how good you are at pattern recognition >:)

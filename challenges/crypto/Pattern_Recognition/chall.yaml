@@ -1,0 +1,39 @@
+challenge:
+  # The name of the challenge author
+  author: 'Andrew'
+
+  # The category of the challenge
+  category: 'Cryptography'
+
+  # The description of the challenge
+  description: "I've come up with my own encryption algorithm! The only way someone could break it is with some form of pattern recognition."
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'pyoyjk'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/ciphertexts.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{REV3RT1NG_R4ND0M_R0TA7IONS}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 300
+    description: 'Perhaps you can think of it as Pair-Turn Recognition'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Pattern Recognition'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
