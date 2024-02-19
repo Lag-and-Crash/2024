@@ -25,7 +25,7 @@ challenge:
     regex: false
 
   # The hints for the challenge
-  hints:
+  hints: null
   
   # The name of the challenge
   name: 'Watch Your Step'
