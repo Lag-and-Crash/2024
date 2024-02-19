@@ -6,5 +6,6 @@ The following 3 ciphertexts were generated from the same script and using the sa
 
 The plaintext is all in lowercase
 The flag is the plaintext converted all to uppercase
+(No key is required!)
 
 Let's see how good you are at pattern recognition >:)
