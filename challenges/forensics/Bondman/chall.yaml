@@ -1,0 +1,42 @@
+challenge:
+  # The name of the challenge author
+  author: 'Alden'
+
+  # The category of the challenge
+  category: 'Forensic'
+
+  # The description of the challenge
+  description: "Agent 07, Hanzo Hasashi here. I hope you are doing well. Vortex have been on my tails lately, disrupting my investigation. Can you help me finish up this investigation and find the evidence so we can bring justice to kkq34h47. Here are they files you need. All the best."
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: '.slee_p'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/Evidence.jpeg
+  - dist/Message.txt
+  - dist/my_evil_plans.7z
+  - dist/Transcript ID TD-9238.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{1O0ks_L1k3_kkq34h47_1s_gui1Ty}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 250
+    description: 'Hmm... Look like the file system is NTFS'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Bondman'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
