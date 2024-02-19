@@ -26,7 +26,7 @@ challenge:
 
   # The hints for the challenge
   hints:
-  - cost: 300
+  - cost: 200
     description: 'Perhaps you can think of it as Pair-Turn Recognition'
     requirements: null
   
