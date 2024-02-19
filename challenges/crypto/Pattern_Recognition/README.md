@@ -8,7 +8,7 @@ I've come up with my own encryption algorithm! The only way someone could break 
 - **Difficulty:** Medium
 
 ## Hints
-- `Perhaps you can think of it as Pair-Turn Recognition` (300 points)
+- `Perhaps you can think of it as Pair-Turn Recognition` (200 points)
 
 ## Files
 - [`ciphertexts.txt`](./dist/ciphertexts.txt)
