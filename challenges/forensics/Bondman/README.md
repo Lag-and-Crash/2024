@@ -7,7 +7,7 @@ Agent 07, Hanzo Hasashi here. I hope you are doing well. Vortex have been on my 
 - **Author:** Alden
 - **Discord Username:** .slee_p
 - **Category:** Forensics
-- **Difficulty:** Hard
+- **Difficulty:** Medium
 
 ## Hints
 
