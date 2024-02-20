@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Orwell's Firewall</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+    <body>
+        <!-- EMQS6YTJNYXXA6LUNBXW4MYKONSWKZBAHUQGS3TUFBZWK43TNFXW4WZCONSWKZBCLUUQUCTTMVSWIZLEKJQW4ZDPNUQD2IDSMFXGI33NFZJGC3TEN5WSQ43FMVSCSCTHMVXGK4TBORSWIIB5EBZWKZLEMVSFEYLOMRXW2LTSMFXGI2LOOQUDALBAGEYDAMBQGAUQUCTTMVZXG2LPNZNSE43FMVSCEXJAHUQGOZLOMVZGC5DFMQFAU2LGEBTXKZLTOMQD2PJAM5SW4ZLSMF2GKZB2BIQCAIBAONSXG43JN5XFWITJNZZXIYLUMURF2IB5EBKHE5LFBIQCAIBAOJSXI5LSNYQCEQ3POJZGKY3UEERAUZLMONSTUCRAEAQCA4TFOR2XE3RAOJSWI2LSMVRXIKDVOJWF6ZTPOIUCO3LBNFXC42LOMRSXQJZMEBSXE4TPOI6SESLOMNXXE4TFMN2CAT3OMVYGC43TEBSW45DFOJSWIIJCFEUQ==== -->
+        <div class="login-container">
+            <div class="login-title">Orwell's Firewall</div>
+            <div class="login-subtitle">"Big Brother is watching you"</div>
+            <form action="/api/verify_truth" method="POST">
+                <input
+                    type="text"
+                    name="guess"
+                    placeholder="Enter Onepass"
+                    class="login-input"
+                    required
+                />
+                <button type="submit" class="login-btn">Access</button>
+            </form>
+            {% if error %}
+            <div class="alert">
+                <span class="close">&times;</span>
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>Untruth Detected!</strong>
+                {{ error }}
+            </div>
+            {% endif %}
+        </div>
+
+        <script>
+            var close = document.getElementsByClassName("close");
+            var i;
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function () {
+                    var div = this.parentElement;
+                    div.style.opacity = "0";
+                    setTimeout(function () {
+                        div.style.display = "none";
+                    }, 600);
+                };
+            }
+        </script>
+    </body>
+</html>

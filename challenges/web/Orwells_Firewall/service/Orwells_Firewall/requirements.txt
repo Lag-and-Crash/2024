@@ -1,0 +1,4 @@
+Flask==3.0.0
+regex==2023.10.3
+Requests==2.31.0
+gunicorn==21.2.0
