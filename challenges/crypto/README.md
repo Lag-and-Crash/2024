@@ -6,11 +6,11 @@ This directory contains challenges related to Crypto.
 | ---------- |:--------------------:|
 | Easy | 2 |
 | Medium | 4 |
-| Hard | 0 |
+| Hard | 1 |
 | Insane | 1 |
-| Total | 7 |
+| Total | 8 |
 
-## Challenges (7 total)
+## Challenges (8 total)
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [Bit Collider](<./Bit Collider>) | Hash collisions! | Easy | Warri |
@@ -20,3 +20,4 @@ This directory contains challenges related to Crypto.
 | [ECB Penguin](<./ECB Penguin>) | I scribbled the flag... | Medium | SpeedFox198 |
 | [Resistance Fighters](<./Resistance Fighters>) | comrade! I think our... | Medium | Jun Jie |
 | [Viva la Revolution!](<./Viva la Revolution!>) | Viva la Revolution m... | Easy | Jun Jie |
+| [Bubble Tea](<./Bubble Tea>) | Would you like to ha... | Hard | SpeedFox198 |

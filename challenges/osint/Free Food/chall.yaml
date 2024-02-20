@@ -1,0 +1,23 @@
+challenge:
+  author: "SpeedFox198"
+  category: "Osint"
+  name: "Free Food"
+  description: |
+    Free Ramen??! SIGN ME UP!!! But wait, where is this place?  
+    (Flag: LNC24{building postal code} E.g. LNC24{569830})
+  difficulty: "Easy"
+  discord: "speedfox198"
+
+  files:
+  - dist/where_is_this.jpg
+
+  flags:
+  - flag: LNC24{440086}
+    regex: false
+
+  hints:
+  - cost: 50
+    description: "https://www.lmgt.com/?q=Takagi+Ramen"
+    requirements: null
+
+  requirements: null
