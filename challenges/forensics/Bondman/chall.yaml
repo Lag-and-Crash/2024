@@ -9,7 +9,7 @@ challenge:
   description: "Agent 07, Hanzo Hasashi here. I hope you are doing well. Vortex have been on my tails lately, disrupting my investigation. Can you help me finish up this investigation and find the evidence so we can bring justice to kkq34h47. Here are they files you need. All the best."
 
   # The difficulty of the challenge
-  difficulty: 'Hard'
+  difficulty: 'Medium'
 
   # The discord username of the author
   discord: '.slee_p'
