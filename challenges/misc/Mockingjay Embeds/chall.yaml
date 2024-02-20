@@ -18,3 +18,5 @@ challenge:
     - cost: 100
       description: "What did they mean by indirectly...? How do I even indirectly ask for the flag???"
       requirements: null
+
+  name: "Mockingjay Embeds"

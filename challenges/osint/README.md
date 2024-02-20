@@ -14,5 +14,5 @@ This directory contains challenges related to Osint.
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [Boblox](<./Boblox>) | You are part of the ... | Hard | Sora |
-| [Nixie](<./Nixie>) | I obtained this imag... | Medium | n00bth3b0x |
 | [Free Food](<./Free Food>) | Free Ramen??! SIGN M... | Easy | SpeedFox198 |
+| [Nixie](<./Nixie>) | I obtained this imag... | Medium | n00bth3b0x |

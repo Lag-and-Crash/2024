@@ -6,7 +6,7 @@ challenge:
   category: 'RE'
 
   # The description of the challenge
-  description: 'Oh hey, another python rev! Looks like it's a simple password checker, can't be that hard :D'
+  description: "Oh hey, another python rev! Looks like it's a simple password checker, can't be that hard :D"
 
   # The difficulty of the challenge
   difficulty: 'Medium'

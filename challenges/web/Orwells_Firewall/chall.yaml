@@ -23,7 +23,7 @@ challenge:
   hints: null
   
   # The name of the challenge
-  name: 'Orwell's Firewall'
+  name: "Orwell's Firewall"
 
   # The requirements for the challenge
   # This should be a list of challenge names that the user must have completed before

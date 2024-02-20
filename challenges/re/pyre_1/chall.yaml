@@ -6,7 +6,7 @@ challenge:
   category: 'RE'
 
   # The description of the challenge
-  description: 'Python Rev, where all compilation has been decompiled and you're left with the source code in its entirety!'
+  description: "Python Rev, where all compilation has been decompiled and you're left with the source code in its entirety!"
 
   # The difficulty of the challenge
   difficulty: 'Easy'
