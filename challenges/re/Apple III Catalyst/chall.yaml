@@ -1,0 +1,28 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'Use the same image as from Apple I: I forgor.\n\nOh no! I had an app on my old macbook that I need... It used to tell me some really important information. Could you help me find that app?'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'Portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{th1s_1s_n0t_a_m4c_4pp_s0m3h0w_asmc192rd}
+    regex: false
+
+  # The name of the challenge
+  name: 'Apple III: Catalyst'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

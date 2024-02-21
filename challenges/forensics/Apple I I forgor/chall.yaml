@@ -1,0 +1,28 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'I JUST set up my new macbook today and can''t believe I already forgot my password. I got a snapshot of my machine maybe you can help me: https://drive.google.com/file/d/1reKg3KF8aZJzHXPBQXOZnawhMy238vMx/view?usp=sharing'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'Portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{y0u_f0und_my_h1nt_asdn12eads}
+    regex: false
+
+  # The name of the challenge
+  name: 'Apple I: I forgot'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
