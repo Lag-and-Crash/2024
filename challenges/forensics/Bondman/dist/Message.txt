@@ -1,0 +1,3 @@
+Agent 07, Hanzo Hasashi here. Before I got to go on a run, I was able to find out that offset 0x20 of the inode tells us that the inode uses extents only. I do not know how to advance from here. 
+
+Goodluck Agent07, the fate of Ostania is in your hands...

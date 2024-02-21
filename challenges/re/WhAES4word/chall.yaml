@@ -3,13 +3,13 @@ challenge:
   author: 'leezhiwei'
 
   # The category of the challenge
-  category: 'Reverse Engineering'
+  category: 'Re'
 
   # The description of the challenge
   description: 'Hey you, I have a creepy coworker, I think I found his server online... He has an unknown EXE on there, wonder what it does... Can you help me see what it is? The original name is "AEScited.exe"'
 
   # The difficulty of the challenge
-  difficulty: 'Hard'
+  difficulty: 'Medium'
 
   # The discord username of the author
   discord: 'lee8219'

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rusty Notes</title>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'"
+		/>
+		<link rel="stylesheet" href="/static/index.css">
+	</head>
+	<body>
+		<h1 id="banner">Rusty Notes</h1>
+		<p id="err_msg">{err_msg}</p>
+		<div class="forms">
+			<div class="form">
+				<h2>Login</h2>
+				<form method="POST" action="/users/login">
+					Username:
+					<input name="username" id="login_username" /><br />
+					Password:
+					<input
+						name="password"
+						type="password"
+						id="login_password"
+					/><br />
+					<input type="submit" id="login_submit" value="Login" />
+				</form>
+			</div>
+
+			<div class="form">
+				<h2>Register</h2>
+				<form method="POST" action="/register">
+					Username: <input name="username" /><br />
+					Password: <input name="password" type="password" /><br />
+					<input type="submit" value="Register" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

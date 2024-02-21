@@ -1,0 +1,21 @@
+challenge:
+  author: "SpeedFox198"
+  category: "Crypto"
+  name: "Bubble Tea"
+  description: "Would you like to have some secret shares? Oh and maybe some bubble tea too!"
+  difficulty: "Hard"
+  discord: "speedfox198"
+
+  files:
+  - dist/server.py
+
+  flags:
+  - flag: LNC24{sH@r1n6_s7uff_5ecR3tly_u5in6_Bu88l3_t3As!?}
+    regex: false
+
+  hints:
+  - cost: 0
+    description: "Do you know what is secret sharing in crypto? https://en.wikipedia.org/wiki/Secret_sharing#t_=_n"
+    requirements: null
+
+  requirements: null

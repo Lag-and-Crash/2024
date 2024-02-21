@@ -1,0 +1,57 @@
+challenge:
+  # The name of the challenge author
+  author: 'flyyee'
+
+  # The category of the challenge
+  category: 'Web'
+
+  # The description of the challenge
+  description: Blazingly fast, fearless concurrency, and you can create notes.
+
+  # The difficulty of the challenge
+  difficulty: 'Insane'
+
+  # The discord username of the author
+  discord: 'flyyee'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{leek_8fc7253e5d7c633e}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Rusty Bot'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# services:
+#   chall:
+#     container_name: chall
+#     build: app
+#     restart: always
+#     ports:
+#       - 1339:8000
+#     environment:
+#       ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+#       FLAG: LNC24{leek_8fc7253e5d7c633e}
+#       BOT_PORT: 8001
+#       BOT_ALIAS: admin
+#       SERVER_PORT: 8000
+#   admin:
+#     container_name: admin
+#     build: admin
+#     restart: always
+#     expose:
+#       - 8001
+#     environment:
+#       ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+#       BOT_PORT: 8001
+#       SERVER_ALIAS: chall
+#       SERVER_PORT: 8000

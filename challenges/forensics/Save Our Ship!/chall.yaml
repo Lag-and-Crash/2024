@@ -1,0 +1,39 @@
+challenge:
+  # The name of the challenge author
+  author: 'Kairos'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'I heard my friend was captured when trying to flee this horrible place! He sent me this weird message though...'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'kairostay'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/challenge.png
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{s4Ve_m3_aT_tHe_jETty!}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'I wonder how many ways a message can be hidden in a single file!'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Save Our Ship!'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

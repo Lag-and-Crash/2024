@@ -1,0 +1,1 @@
+LNC24{fake_flag}
