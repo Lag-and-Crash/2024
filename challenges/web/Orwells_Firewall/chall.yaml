@@ -38,4 +38,4 @@ services:
   Orwells_Firewall:
     name: Orwells_Firewall
     path: service
-    port: '8969:5000'
+    port: '5000'
