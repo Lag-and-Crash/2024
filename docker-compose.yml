@@ -1,0 +1,139 @@
+networks:
+  bitcollider:
+    internal: true
+    name: bitcollider
+  cheminventory:
+    internal: true
+    name: cheminventory
+  ctfchallengehub:
+    internal: true
+    name: ctfchallengehub
+  dhiordlo:
+    internal: true
+    name: dhiordlo
+  luckyplaza:
+    internal: true
+    name: luckyplaza
+  orwellsfirewall:
+    internal: true
+    name: orwellsfirewall
+  poisoned:
+    internal: true
+    name: poisoned
+  systemr3wr1t3:
+    internal: true
+    name: systemr3wr1t3
+  thiswebtoosimple:
+    internal: true
+    name: thiswebtoosimple
+  wabbit:
+    internal: true
+    name: wabbit
+  welcome2pwn:
+    internal: true
+    name: welcome2pwn
+services:
+  CtfChallengeHub:
+    build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
+    container_name: CtfChallengeHub
+    networks:
+    - ctfchallengehub
+    ports:
+    - 11001:1337
+    restart: always
+  Orwells_Firewall:
+    build: challenges/web/Orwell's Firewall/service
+    container_name: Orwells_Firewall
+    networks:
+    - orwellsfirewall
+    ports:
+    - 9000:5000
+    restart: always
+  This_WEB_Too_Simple:
+    build: challenges/web/This_WEB_Too_Simple/service/app
+    container_name: This_WEB_Too_Simple
+    networks:
+    - thiswebtoosimple
+    ports:
+    - 9003:5000
+    restart: always
+  apache-server:
+    build: challenges/web/SystemR3Wr1t3/service/app
+    container_name: apache-server
+    networks:
+    - systemr3wr1t3
+    read_only: true
+    restart: always
+    volumes:
+    - target: /tmp
+      tmpfs:
+        size: 4096
+      type: tmpfs
+  bit-collider:
+    build: challenges/crypto/Bit Collider/service/Bit_Collider
+    container_name: bit-collider
+    networks:
+    - bitcollider
+    ports:
+    - 8000:1337
+    restart: always
+  cheminventory:
+    build: challenges/pwn/Cheminventory/service/cheminventory
+    container_name: cheminventory
+    networks:
+    - cheminventory
+    ports:
+    - 11000:1337
+    restart: always
+  dhi_or_dlo:
+    build: challenges/crypto/dhi_or_dlo/service/dhi_or_dlo
+    container_name: dhi_or_dlo
+    networks:
+    - dhiordlo
+    ports:
+    - 8001:1337
+    restart: always
+  luckyplaza:
+    build: challenges/pwn/Lucky Plaza/service/luckyplaza
+    container_name: luckyplaza
+    networks:
+    - luckyplaza
+    ports:
+    - 11002:1688
+    restart: always
+  poisoned:
+    build: challenges/pwn/Poisoned/service/poisoned
+    container_name: poisoned
+    networks:
+    - poisoned
+    ports:
+    - 11003:1340
+    restart: always
+  reverse-proxy:
+    build: challenges/web/SystemR3Wr1t3/service/proxy
+    container_name: reverse-proxy
+    depends_on:
+    - apache-server
+    networks:
+    - systemr3wr1t3
+    ports:
+    - 9002:80
+    read_only: true
+    restart: always
+  wabbit:
+    build: challenges/re/Wabbit/service/Wabbit
+    container_name: wabbit
+    networks:
+    - wabbit
+    ports:
+    - 10000:8888
+    restart: always
+  welcome:
+    build: challenges/pwn/Welcome2Pwn!/service/welcome
+    container_name: welcome
+    networks:
+    - welcome2pwn
+    ports:
+    - 11004:1337
+    restart: always
+version: '3'

@@ -1,0 +1,19 @@
+# NOTE: This docker compose is not used when hosting the challenge
+
+services:
+  reverse-proxy:
+    build: ./proxy
+    ports:
+      - "8123:80"
+    depends_on:
+      - apache-server
+    read_only: true
+
+  apache-server:
+    build: ./app
+    volumes:
+      - type: tmpfs
+        target: /tmp
+        tmpfs:
+          size: 4096
+    read_only: true

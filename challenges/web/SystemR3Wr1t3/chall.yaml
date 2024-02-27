@@ -50,7 +50,7 @@ services:
   reverse-proxy:
     name: reverse-proxy
     path: service/proxy
-    port: null
+    port: '80'
     extras:
       depends_on:
         - apache-server

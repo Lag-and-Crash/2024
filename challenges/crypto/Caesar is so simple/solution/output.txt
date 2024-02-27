@@ -1,4 +1,0 @@
-msg_enc='H7t*a&qqGtE@/nPv0qMMadh{796W`-kxW8j< /rf~F@%qxG6gvAUH9w%,V;DHa7zBd:\\ wC1(,1,d/a*/HK@H==r%k:BxpwB'
-msg_iv=b'Iu\x11\x90l\xc5\x0c3\xc0\xf3y\xa9\xea0\x05\xf0'    
-flag_enc="E}'mLQDAMl(>9]<\\@RJo;VZBcX[z:^;01Al`Vrn.D/caYK,v"
-flag_iv=b'MRp\xe8\x8cmt\xce\x89.\x91\xad\x15\\E\\'

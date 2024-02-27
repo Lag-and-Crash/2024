@@ -1,0 +1,28 @@
+version: "3"
+services:
+  # https://blog.logrocket.com/packaging-a-rust-web-service-using-docker/
+  chall:
+    container_name: chall
+    build: app
+    restart: always
+    ports:
+      - 1339:8000
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      FLAG: LNC24{leek_8fc7253e5d7c633e}
+      BOT_PORT: 8001
+      BOT_ALIAS: admin
+      SERVER_PORT: 8000
+  # https://github.com/dimasma0305/CTF-XSS-BOT
+  # https://github.com/Social-Engineering-Experts/SEETF-2023-Public/tree/main/challs/web/mandatory-notes-challenge (come play SEETF'24!)
+  admin:
+    container_name: admin
+    build: admin
+    restart: always
+    expose:
+      - 8001
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      BOT_PORT: 8001
+      SERVER_ALIAS: chall
+      SERVER_PORT: 8000

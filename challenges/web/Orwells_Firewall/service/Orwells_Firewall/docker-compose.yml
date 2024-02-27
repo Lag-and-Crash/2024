@@ -1,0 +1,6 @@
+version: '2.4'
+services:
+  orwells_firewall:
+    build: .
+    ports:
+      - 8969:5000

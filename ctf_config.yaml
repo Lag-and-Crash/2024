@@ -18,4 +18,40 @@ config:
     value: 1000
   name: LNC2024
   port: 8000
-  port_mappings: null
+  port_mappings:
+    CtfChallengeHub:
+      from_port: '1337'
+      to_port: '11001'
+    Orwells_Firewall:
+      from_port: '5000'
+      to_port: '9000'
+    This_WEB_Too_Simple:
+      from_port: '5000'
+      to_port: '9003'
+    apache-server:
+      from_port: '80'
+      to_port: '9001'
+    bit-collider:
+      from_port: '1337'
+      to_port: '8000'
+    cheminventory:
+      from_port: '1337'
+      to_port: '11000'
+    dhi_or_dlo:
+      from_port: '1337'
+      to_port: '8001'
+    luckyplaza:
+      from_port: '1688'
+      to_port: '11002'
+    poisoned:
+      from_port: '1340'
+      to_port: '11003'
+    reverse-proxy:
+      from_port: '80'
+      to_port: '9002'
+    wabbit:
+      from_port: '8888'
+      to_port: '10000'
+    welcome:
+      from_port: '1337'
+      to_port: '11004'
