@@ -5,15 +5,17 @@ This directory contains challenges related to Misc.
 | Difficulty | Number of Challenges |
 | ---------- |:--------------------:|
 | Easy | 2 |
-| Medium | 2 |
-| Hard | 1 |
+| Medium | 3 |
+| Hard | 2 |
 | Insane | 0 |
-| Total | 5 |
+| Total | 7 |
 
-## Challenges (5 total)
+## Challenges (7 total)
 | Name | Description | Difficulty | Author |
 | ---- | ----------- | ---------- | ------ |
 | [Ferris Wheel](<./Ferris Wheel>) | I love ferris wheels... | Easy | Jun Jie |
+| [Hardware Lockout 1](<./Hardware Lockout 1>) | I heard hardware tok... | Medium | Jon Chiang (CSIT) |
+| [Hardware Lockout 2](<./Hardware Lockout 2>) | I heard hardware tok... | Hard | Jon Chiang (CSIT) |
 | [Mockingjay Embeds](<./Mockingjay Embeds>) | A cryptic database l... | Medium | Kairos |
 | [Unknown Lingo](<./Unknown Lingo>) | It seems like this p... | Easy | Jun Jie |
 | [Watch Your Step](<./Watch Your Step>) | On their way to the ... | Hard | Mark Bosco |

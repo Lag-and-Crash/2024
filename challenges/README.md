@@ -7,14 +7,14 @@ This directory contains all challenges.
 | Crypto | 2 | 5 | 2 | 1 | 10 |
 | Web | 2 | 0 | 1 | 1 | 4 |
 | Forensics | 4 | 4 | 0 | 1 | 9 |
-| Misc | 2 | 2 | 1 | 0 | 5 |
-| Re | 1 | 3 | 1 | 1 | 6 |
+| Misc | 2 | 3 | 2 | 0 | 7 |
+| Re | 2 | 3 | 1 | 1 | 7 |
 | Pwn | 1 | 1 | 2 | 1 | 5 |
 | Osint | 1 | 1 | 1 | 0 | 3 |
-| Total | 13 | 16 | 8 | 5 | 42 |
+| Total | 14 | 17 | 9 | 5 | 45 |
 
 
-## Challenges (42 total)
+## Challenges (45 total)
 | Name | Description | Category | Difficulty | Author |
 | ---- | ----------- | -------- | ---------- | ------ |
 | [Backpacker](<./cryptography/Backpacker>) | I love packing! Espe... | Cryptography | Hard | Warri |
@@ -41,12 +41,15 @@ This directory contains all challenges.
 | [SpillTheBeans](<./forensics/SpillTheBeans>) | A user reported rece... | Forensics | Medium | n00bth3b0x |
 | [The Elusive Red Herring](<./forensics/The Elusive Red Herring>) | In the depths of the... | Forensics | Easy | Jun Jie |
 | [Ferris Wheel](<./miscellaneous/Ferris Wheel>) | I love ferris wheels... | Miscellaneous | Easy | Jun Jie |
+| [Hardware Lockout 1](<./misc/Hardware Lockout 1>) | I heard hardware tok... | Misc | Medium | Jon Chiang (CSIT) |
+| [Hardware Lockout 2](<./misc/Hardware Lockout 2>) | I heard hardware tok... | Misc | Hard | Jon Chiang (CSIT) |
 | [Mockingjay Embeds](<./misc/Mockingjay Embeds>) | A cryptic database l... | Misc | Medium | Kairos |
 | [Unknown Lingo](<./miscellaneous/Unknown Lingo>) | It seems like this p... | Miscellaneous | Easy | Jun Jie |
 | [Watch Your Step](<./miscellaneous/Watch Your Step>) | On their way to the ... | Miscellaneous | Hard | Mark Bosco |
 | [WheelOfFortune](<./misc/WheelOfFortune>) | Who is the winner of... | Misc | Medium | n00bth3b0x |
 | [dispy](<./re/dispy>) | Help my pyton code n... | Re | Medium | Warri |
 | [L1N3](<./re/L1N3>) | With the recent rise... | Re | Hard | Warri |
+| [lonely](<./re/lonely>) | I am lonely, tell me... | Re | Easy | Chen Heyu |
 | [pyre_1](<./re/pyre_1>) | Python Rev, where al... | Re | Easy | Warri |
 | [pyre_2](<./re/pyre_2>) | Oh hey, another pyth... | Re | Medium | Warri |
 | [Wabbit](<./re/Wabbit>) | A bash shell running... | Re | Insane | Carl Voller |
