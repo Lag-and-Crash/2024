@@ -8,7 +8,12 @@ Step 3:
 Use python to generate random text more than buffer size
 
 Step 4:
-Overflow the second buffer which asks for a random number
+Overflow both buffers the first asks for a password, the second asks for a random number.
+First password:128, Second random number generator: 1000000.
 
-Step 5: Get the Flag
+Step 5: Successfully Overflowed to get reversed flag:
+}%?ɘɘƧ$UႧɘ#5ɿ3@v3!Я{42ƆИ⅃
+
+Step 6:Use a reversed text tool like: https://www.textfixer.com/tools/reverse-text-generator.php
+Mirror and Reverse Text to get the flag.
 Flag: LNC24{R!3v@3r5#eDU$See?%}
