@@ -46,10 +46,9 @@ config:
     poisoned:
       from_port: '1340'
       to_port: '11003'
-    # TODO: Fix this
-    # reverse-proxy:
-    #   from_port: null
-    #   to_port: '9002'
+    reverse-proxy:
+      from_port: '80'
+      to_port: '9002'
     wabbit:
       from_port: '8888'
       to_port: '10000'

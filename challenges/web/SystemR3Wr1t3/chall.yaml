@@ -47,13 +47,12 @@ services:
             size: 4096
       read_only: true
     
-  # TODO: Fix this
-  # reverse-proxy:
-  #   name: reverse-proxy
-  #   path: service/proxy
-  #   port: null
-  #   extras:
-  #     depends_on:
-  #       - apache-server
-  #     read_only: true
+  reverse-proxy:
+    name: reverse-proxy
+    path: service/proxy
+    port: '80'
+    extras:
+      depends_on:
+        - apache-server
+      read_only: true
     

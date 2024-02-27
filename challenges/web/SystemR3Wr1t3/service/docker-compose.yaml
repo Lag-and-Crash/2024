@@ -1,3 +1,4 @@
+# NOTE: This docker compose is not used when hosting the challenge
 
 services:
   reverse-proxy:

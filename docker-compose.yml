@@ -62,8 +62,6 @@ services:
     container_name: apache-server
     networks:
     - systemr3wr1t3
-    ports:
-    - 9001:80
     read_only: true
     restart: always
     volumes:
@@ -110,6 +108,17 @@ services:
     - poisoned
     ports:
     - 11003:1340
+    restart: always
+  reverse-proxy:
+    build: challenges/web/SystemR3Wr1t3/service/proxy
+    container_name: reverse-proxy
+    depends_on:
+    - apache-server
+    networks:
+    - systemr3wr1t3
+    ports:
+    - 9002:80
+    read_only: true
     restart: always
   wabbit:
     build: challenges/re/Wabbit/service/Wabbit
