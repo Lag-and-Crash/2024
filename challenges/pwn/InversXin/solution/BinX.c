@@ -2,6 +2,12 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+void ignore_me_init_buffering() {
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+}
+
 char* readfile(char *filename);
 char* readfile(char *filename) // reading txt
 {
@@ -40,7 +46,7 @@ void initialize_random_seed() {
 
 // Function to generate a random number in the range -100000 to 999999.
 int generate_random_number() {
-    // RAND_MAX is the maximum value returned by rand(). Ensure it's at least 1099999.
+    // RAND_MAX is the maximum value returned by rand(). Ensure it's at least 1099999.
     if (RAND_MAX < 1099999) {
         fprintf(stderr, "RAND_MAX is too small on this system to generate the desired range.\n");
         exit(EXIT_FAILURE);
@@ -52,6 +58,7 @@ int generate_random_number() {
 
 
 int main(){
+	ignore_me_init_buffering();
 	// Initialize the random number generator.
 	initialize_random_seed();
 	//Generate and print a random number.
@@ -73,6 +80,8 @@ int main(){
 	if (result && (n != random_number)) // if result 
 	{
 		printf("Incorrect password\n"); // print err
+		printf("Try again.\n");
+		printf("The number is bigger than that.\n");
 	}
 	else // else
 	{
