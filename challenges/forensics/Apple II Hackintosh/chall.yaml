@@ -1,0 +1,28 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'Forensics'
+
+  # The description of the challenge
+  description: 'Use the same image as from Apple I: I forgor.\n\nI gave up and decided to make my own mac. Could you help me find my Serial Number and Hypervisor? In the format LNC24{SerialNo-Hypervisor} (like LNC24{XXXXXXXXX-Qemu} for example)'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'Portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{ZX7H1H7P7D-Parallels}
+    regex: false
+
+  # The name of the challenge
+  name: 'Apple II: Hackintosh'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

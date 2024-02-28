@@ -22,3 +22,5 @@ This directory contains challenges related to Forensics.
 | [Secret_Military_Zone](<./Secret_Military_Zone>) | The attacker stole s... | Insane | n00bth3b0x |
 | [SpillTheBeans](<./SpillTheBeans>) | A user reported rece... | Medium | n00bth3b0x |
 | [The Elusive Red Herring](<./The Elusive Red Herring>) | In the depths of the... | Easy | Jun Jie |
+| [Apple I: I forgot](<./Apple I I forgor/>) | I JUST set up my new macbook... | Hard | Carl Voller |
+| [Apple II: Hackintosh](<./Apple II Hackintosh/>) | I gave up and decided to make... | Hard | Carl Voller |

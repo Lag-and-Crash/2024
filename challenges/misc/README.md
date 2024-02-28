@@ -20,3 +20,4 @@ This directory contains challenges related to Misc.
 | [Unknown Lingo](<./Unknown Lingo>) | It seems like this p... | Easy | Jun Jie |
 | [Watch Your Step](<./Watch Your Step>) | On their way to the ... | Hard | Mark Bosco |
 | [WheelOfFortune](<./WheelOfFortune>) | Who is the winner of... | Medium | n00bth3b0x |
+| [Jacket](<./Jacket/>) | Java can be a lot more functional... | Hard | Carl Voller |
