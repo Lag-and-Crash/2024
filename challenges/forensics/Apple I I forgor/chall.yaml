@@ -19,6 +19,8 @@ challenge:
   - flag: LNC24{y0u_f0und_my_h1nt_asdn12eads}
     regex: false
 
+  hints: null
+
   # The name of the challenge
   name: 'Apple I: I forgot'
 

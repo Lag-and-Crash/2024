@@ -22,6 +22,8 @@ challenge:
   # The name of the challenge
   name: 'Apple III: Catalyst'
 
+  hints: null
+
   # The requirements for the challenge
   # This should be a list of challenge names that the user must have completed before
   # being able to see this challenge

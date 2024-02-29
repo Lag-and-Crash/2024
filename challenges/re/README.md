@@ -20,4 +20,3 @@ This directory contains challenges related to Re.
 | [pyre_2](<./pyre_2>) | Oh hey, another pyth... | Medium | Warri |
 | [Wabbit](<./Wabbit>) | A bash shell running... | Insane | Carl Voller |
 | [WhAES4Word](<./WhAES4Word>) | Hey you, I have a cr... | Medium | leezhiwei |
-| [Apple III: Catalyst](<./Apple III Catalyst/>) | Oh no! I had an app on my old macbook... | Hard | Carl Voller |

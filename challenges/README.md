@@ -6,15 +6,15 @@ This directory contains all challenges.
 | -------- |:----:|:------:|:----:|:------:|:-----:|
 | Crypto | 2 | 5 | 2 | 1 | 10 |
 | Web | 2 | 0 | 1 | 1 | 4 |
-| Forensics | 4 | 4 | 0 | 1 | 9 |
-| Misc | 2 | 3 | 2 | 0 | 7 |
+| Forensics | 4 | 4 | 3 | 1 | 12 |
+| Misc | 2 | 3 | 3 | 0 | 8 |
 | Re | 2 | 3 | 1 | 1 | 7 |
-| Pwn | 1 | 1 | 2 | 1 | 5 |
+| Pwn | 1 | 2 | 2 | 1 | 6 |
 | Osint | 1 | 1 | 1 | 0 | 3 |
-| Total | 14 | 17 | 9 | 5 | 45 |
+| Total | 14 | 18 | 13 | 5 | 50 |
 
 
-## Challenges (45 total)
+## Challenges (50 total)
 | Name | Description | Category | Difficulty | Author |
 | ---- | ----------- | -------- | ---------- | ------ |
 | [Backpacker](<./cryptography/Backpacker>) | I love packing! Espe... | Cryptography | Hard | Warri |
@@ -31,6 +31,9 @@ This directory contains all challenges.
 | [Rusty Bot](<./web/Rusty Bot>) | Blazingly fast, fear... | Web | Insane | flyyee |
 | [SystemR3Wr1t3](<./web/SystemR3Wr1t3>) | I am about to Rewrit... | Web | Hard | Carl Voller |
 | [This_WEB_Too_Simple](<./web/This_WEB_Too_Simple>) | A very simple web ch... | Web | Easy | Liew Wen Yu |
+| [Apple I: I forgot](<./forensics/Apple I: I forgot>) | I JUST set up my new... | Forensics | Hard | Carl Voller |
+| [Apple II: Hackintosh](<./forensics/Apple II: Hackintosh>) | Use the same image a... | Forensics | Hard | Carl Voller |
+| [Apple III: Catalyst](<./forensics/Apple III: Catalyst>) | Use the same image a... | Forensics | Hard | Carl Voller |
 | [Audiophile](<./forensics/Audiophile>) | I love listening to ... | Forensics | Easy | Jun Jie |
 | [Bondman](<./forensic/Bondman>) | Agent 07, Hanzo Hasa... | Forensic | Medium | Alden |
 | [GetItBack](<./forensics/GetItBack>) | Eval was working on ... | Forensics | Medium | n00bth3b0x |
@@ -43,6 +46,7 @@ This directory contains all challenges.
 | [Ferris Wheel](<./miscellaneous/Ferris Wheel>) | I love ferris wheels... | Miscellaneous | Easy | Jun Jie |
 | [Hardware Lockout 1](<./misc/Hardware Lockout 1>) | I heard hardware tok... | Misc | Medium | Jon Chiang (CSIT) |
 | [Hardware Lockout 2](<./misc/Hardware Lockout 2>) | I heard hardware tok... | Misc | Hard | Jon Chiang (CSIT) |
+| [Jacket](<./misc/Jacket>) | Java can be a lot mo... | Misc | Hard | Carl Voller |
 | [Mockingjay Embeds](<./misc/Mockingjay Embeds>) | A cryptic database l... | Misc | Medium | Kairos |
 | [Unknown Lingo](<./miscellaneous/Unknown Lingo>) | It seems like this p... | Miscellaneous | Easy | Jun Jie |
 | [Watch Your Step](<./miscellaneous/Watch Your Step>) | On their way to the ... | Miscellaneous | Hard | Mark Bosco |
@@ -56,6 +60,7 @@ This directory contains all challenges.
 | [WhAES4Word](<./re/WhAES4Word>) | Hey you, I have a cr... | Re | Medium | leezhiwei |
 | [Cheminventory](<./pwn/Cheminventory>) | Storing explosive ch... | Pwn | Insane | Kaligula |
 | [CtfChallengeHub](<./pwn/CtfChallengeHub>) | A ctf inside a ctf? ... | Pwn | Medium | Warri |
+| [InversXin](<./pwn/InversXin>) | Do you know inversin... | Pwn | Medium | Etitg-liau |
 | [Lucky Plaza](<./pwn/Lucky Plaza>) | This plaza is full o... | Pwn | Hard | flyyee |
 | [Poisoned](<./pwn/Poisoned>) | Old-school fun. | Pwn | Hard | flyyee |
 | [Welcome2Pwn!](<./pwn/Welcome2Pwn!>) | What better way to l... | Pwn | Easy | Kaligula |
