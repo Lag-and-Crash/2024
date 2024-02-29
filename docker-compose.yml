@@ -11,6 +11,12 @@ networks:
   dhiordlo:
     internal: true
     name: dhiordlo
+  inversxin:
+    internal: true
+    name: inversxin
+  jacket:
+    internal: true
+    name: jacket
   luckyplaza:
     internal: true
     name: luckyplaza
@@ -39,7 +45,15 @@ services:
     networks:
     - ctfchallengehub
     ports:
-    - 11001:1337
+    - 8401:1337
+    restart: always
+  InversXin:
+    build: challenges/pwn/InversXin/service/binexp
+    container_name: InversXin
+    networks:
+    - inversxin
+    ports:
+    - 8402:5000
     restart: always
   Orwells_Firewall:
     build: challenges/web/Orwell's Firewall/service
@@ -47,7 +61,7 @@ services:
     networks:
     - orwellsfirewall
     ports:
-    - 9000:5000
+    - 8100:5000
     restart: always
   This_WEB_Too_Simple:
     build: challenges/web/This_WEB_Too_Simple/service/app
@@ -55,7 +69,7 @@ services:
     networks:
     - thiswebtoosimple
     ports:
-    - 9003:5000
+    - 8103:5000
     restart: always
   apache-server:
     build: challenges/web/SystemR3Wr1t3/service/app
@@ -83,7 +97,7 @@ services:
     networks:
     - cheminventory
     ports:
-    - 11000:1337
+    - 8400:1337
     restart: always
   dhi_or_dlo:
     build: challenges/crypto/dhi_or_dlo/service/dhi_or_dlo
@@ -99,7 +113,7 @@ services:
     networks:
     - luckyplaza
     ports:
-    - 11002:1688
+    - 8403:1688
     restart: always
   poisoned:
     build: challenges/pwn/Poisoned/service/poisoned
@@ -107,7 +121,16 @@ services:
     networks:
     - poisoned
     ports:
-    - 11003:1340
+    - 8404:1340
+    restart: always
+  racket-server:
+    build: challenges/misc/Jacket/service/Jacket
+    container_name: racket-server
+    networks:
+    - jacket
+    ports:
+    - 8200:8014
+    read_only: true
     restart: always
   reverse-proxy:
     build: challenges/web/SystemR3Wr1t3/service/proxy
@@ -117,7 +140,7 @@ services:
     networks:
     - systemr3wr1t3
     ports:
-    - 9002:80
+    - 8102:80
     read_only: true
     restart: always
   wabbit:
@@ -126,7 +149,7 @@ services:
     networks:
     - wabbit
     ports:
-    - 10000:8888
+    - 8300:8888
     restart: always
   welcome:
     build: challenges/pwn/Welcome2Pwn!/service/welcome
@@ -134,6 +157,6 @@ services:
     networks:
     - welcome2pwn
     ports:
-    - 11004:1337
+    - 8405:1337
     restart: always
 version: '3'
