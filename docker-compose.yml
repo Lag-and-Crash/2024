@@ -23,6 +23,9 @@ networks:
   orwellsfirewall:
     internal: true
     name: orwellsfirewall
+  postit:
+    internal: true
+    name: postit
   poisoned:
     internal: true
     name: poisoned
@@ -62,6 +65,14 @@ services:
     - orwellsfirewall
     ports:
     - 8100:5000
+    restart: always
+  post-it:
+    build: challenges/web/Post It/service/post-it
+    container_name: post-it
+    networks:
+    - postit
+    ports:
+    - 8101:1337
     restart: always
   This_WEB_Too_Simple:
     build: challenges/web/This_WEB_Too_Simple/service/app

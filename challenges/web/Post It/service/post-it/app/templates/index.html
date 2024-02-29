@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block nav_items %}
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Home</a>
+  {% if user %}
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/pubkey">RSA Key</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+  </li>
+  {% endif %}
+{% endblock %}
+{% block main %}
+
+  {% if admin %}
+  <h1>Welcome Admin!</h1>
+  <p>
+    Your Posts:
+    <li><a href="/view/hello">Post 1</a></li>
+    <li><a href="/view/public_key">Post 2</a></li>
+    <li><a href="/view/debugging">Post 3 (Draft)</a></li>
+  </p>
+  {% else %}
+  <h1>Welcome to Post It!<br>The site where I post random things!</h1>
+  <p>
+    My Posts:
+    <li><a href="/view/hello">Post 1</a></li>
+    <li><a href="/view/public_key">Post 2</a></li>
+  </p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,3 @@
+Some of you for some reason want to validate your JWT token with the RSA public key.
+
+I have now updated the website so that you can get the public key from the website when you log in. Just click on the "RSA Key" link in the navbar.

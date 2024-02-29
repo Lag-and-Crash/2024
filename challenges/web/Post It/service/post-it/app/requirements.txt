@@ -1,0 +1,2 @@
+pyJWT[crypto]
+flask

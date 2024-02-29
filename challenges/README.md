@@ -5,16 +5,16 @@ This directory contains all challenges.
 | Category | Easy | Medium | Hard | Insane | Total |
 | -------- |:----:|:------:|:----:|:------:|:-----:|
 | Crypto | 2 | 5 | 2 | 1 | 10 |
-| Web | 2 | 0 | 1 | 1 | 4 |
+| Web | 2 | 0 | 2 | 1 | 5 |
 | Forensics | 4 | 4 | 3 | 1 | 12 |
 | Misc | 2 | 3 | 3 | 0 | 8 |
 | Re | 2 | 3 | 1 | 1 | 7 |
 | Pwn | 1 | 2 | 2 | 1 | 6 |
 | Osint | 1 | 1 | 1 | 0 | 3 |
-| Total | 14 | 18 | 13 | 5 | 50 |
+| Total | 14 | 18 | 14 | 5 | 51 |
 
 
-## Challenges (50 total)
+## Challenges (51 total)
 | Name | Description | Category | Difficulty | Author |
 | ---- | ----------- | -------- | ---------- | ------ |
 | [Backpacker](<./cryptography/Backpacker>) | I love packing! Espe... | Cryptography | Hard | Warri |
@@ -28,6 +28,7 @@ This directory contains all challenges.
 | [Resistance Fighters](<./cryptography/Resistance Fighters>) | comrade! I think our... | Cryptography | Medium | Jun Jie |
 | [Viva la Revolution!](<./cryptography/Viva la Revolution!>) | Viva la Revolution m... | Cryptography | Easy | Jun Jie |
 | [Orwell's Firewall](<./web/Orwell's Firewall>) | A secret is hidden b... | Web | Easy | Hu Bowen |
+| [Post It](<./web/Post It>) | Look at this amazing... | Web | Hard | JusCodin |
 | [Rusty Bot](<./web/Rusty Bot>) | Blazingly fast, fear... | Web | Insane | flyyee |
 | [SystemR3Wr1t3](<./web/SystemR3Wr1t3>) | I am about to Rewrit... | Web | Hard | Carl Voller |
 | [This_WEB_Too_Simple](<./web/This_WEB_Too_Simple>) | A very simple web ch... | Web | Easy | Liew Wen Yu |

@@ -28,6 +28,9 @@ config:
     Orwells_Firewall:
       from_port: '5000'
       to_port: '8100'
+    post-it:
+      from_port: '1337'
+      to_port: '8101'
     This_WEB_Too_Simple:
       from_port: '5000'
       to_port: '8103'
