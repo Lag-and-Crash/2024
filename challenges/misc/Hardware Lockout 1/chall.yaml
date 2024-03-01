@@ -31,7 +31,7 @@ challenge:
   
   # The hints for the challenge
   hints:
-  - cost: free
+  - cost: 0
     description: 'You can use the Wokwi Arduino Uno simulator to tackle the first flag.'
     requirements: none
   
