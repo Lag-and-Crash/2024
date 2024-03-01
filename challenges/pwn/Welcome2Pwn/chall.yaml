@@ -19,4 +19,4 @@ services:
   welcome:
     name: welcome
     path: service/welcome
-    port: '1337'
+    port: '5000'

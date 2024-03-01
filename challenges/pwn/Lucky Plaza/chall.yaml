@@ -45,4 +45,4 @@ services:
   luckyplaza:
     name: luckyplaza
     path: service/luckyplaza
-    port: '1688'
+    port: '5000'

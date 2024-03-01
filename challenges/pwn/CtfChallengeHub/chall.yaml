@@ -44,4 +44,4 @@ services:
   CtfChallengeHub:
     name: CtfChallengeHub
     path: service/CtfChallengeHub
-    port: '1337'
+    port: '5000'

@@ -21,7 +21,7 @@ services:
     - ctfchallengehub
     privileged: true
     ports:
-    - 8401:1337
+    - 8401:5000
     restart: always
   inversxin:
     build: challenges/pwn/InversXin/service/binexp
@@ -100,7 +100,7 @@ services:
     - luckyplaza
     privileged: true
     ports:
-    - 8403:1688
+    - 8403:5000
     restart: always
   poisoned:
     build: challenges/pwn/Poisoned/service/poisoned
@@ -109,7 +109,7 @@ services:
     - poisoned
     privileged: true
     ports:
-    - 8404:1340
+    - 8404:5000
     restart: always
   racket-server:
     build: challenges/misc/Jacket/service/Jacket
@@ -146,6 +146,6 @@ services:
     - welcome2pwn
     privileged: true
     ports:
-    - 8405:1337
+    - 8405:5000
     restart: always
 version: '3'

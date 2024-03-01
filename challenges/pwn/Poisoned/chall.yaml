@@ -46,4 +46,4 @@ services:
   poisoned:
     name: poisoned
     path: service/poisoned
-    port: '1340'
+    port: '5000'
