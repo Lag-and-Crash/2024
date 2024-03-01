@@ -1,46 +1,18 @@
 networks:
   bitcollider:
-    internal: true
-    name: bitcollider
   cheminventory:
-    internal: true
-    name: cheminventory
   ctfchallengehub:
-    internal: true
-    name: ctfchallengehub
   dhiordlo:
-    internal: true
-    name: dhiordlo
   inversxin:
-    internal: true
-    name: inversxin
   jacket:
-    internal: true
-    name: jacket
   luckyplaza:
-    internal: true
-    name: luckyplaza
   orwellsfirewall:
-    internal: true
-    name: orwellsfirewall
   postit:
-    internal: true
-    name: postit
   poisoned:
-    internal: true
-    name: poisoned
   systemr3wr1t3:
-    internal: true
-    name: systemr3wr1t3
   thiswebtoosimple:
-    internal: true
-    name: thiswebtoosimple
   wabbit:
-    internal: true
-    name: wabbit
   welcome2pwn:
-    internal: true
-    name: welcome2pwn
 services:
   ctfchallengehub:
     build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
