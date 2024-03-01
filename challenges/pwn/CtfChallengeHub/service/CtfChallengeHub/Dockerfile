@@ -6,3 +6,4 @@ COPY flag /flag
 # You don't need to care about this
 FROM pwn.red/jail
 COPY --from=app / /srv
+RUN chmod +x /srv/app/run
