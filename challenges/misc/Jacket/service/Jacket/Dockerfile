@@ -10,11 +10,11 @@ RUN apt-get install -y racket
 RUN raco pkg install --auto http-easy
 RUN raco pkg install --auto jni
 
-RUN apt install openjdk-17-jre-headless openjdk-17-jdk -y
+RUN apt update && apt install -y openjdk-17-jre-headless openjdk-17-jdk
 
 COPY notes.txt /flag
 COPY project /project
-RUN cp -r /usr/lib/jvm/java-17-openjdk-arm64 /usr/lib/jvm/default-java
+# RUN cp -r /usr/lib/jvm/java-17-openjdk-arm64 /usr/lib/jvm/default-java
 
 RUN cd /project && javac bnKCbaBDFLAHldhlasdasd.java jbcdksnkcal.java nckabnclkansdklands.java plmalnnxAS091.java
 

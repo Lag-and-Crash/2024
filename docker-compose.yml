@@ -42,25 +42,27 @@ networks:
     internal: true
     name: welcome2pwn
 services:
-  CtfChallengeHub:
+  ctfchallengehub:
     build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
-    container_name: CtfChallengeHub
+    container_name: ctfchallengehub
     networks:
     - ctfchallengehub
+    privileged: true
     ports:
     - 8401:1337
     restart: always
-  InversXin:
+  inversxin:
     build: challenges/pwn/InversXin/service/binexp
-    container_name: InversXin
+    container_name: inversxin
     networks:
     - inversxin
+    privileged: true
     ports:
     - 8402:5000
     restart: always
-  Orwells_Firewall:
-    build: challenges/web/Orwell's Firewall/service
-    container_name: Orwells_Firewall
+  orwells-firewall:
+    build: challenges/web/Orwells_Firewall/service/Orwells_Firewall
+    container_name: orwells-firewall
     networks:
     - orwellsfirewall
     ports:
@@ -74,9 +76,9 @@ services:
     ports:
     - 8101:1337
     restart: always
-  This_WEB_Too_Simple:
-    build: challenges/web/This_WEB_Too_Simple/service/app
-    container_name: This_WEB_Too_Simple
+  this-web-too-simple:
+    build: challenges/web/This_WEB_Too_Simple/service/This_WEB_Too_Simple/app
+    container_name: this-web-too-simple
     networks:
     - thiswebtoosimple
     ports:
@@ -103,10 +105,11 @@ services:
     - 8000:1337
     restart: always
   cheminventory:
-    build: challenges/pwn/Cheminventory/service/cheminventory
+    build: challenges/pwn/Cheminventory/service
     container_name: cheminventory
     networks:
     - cheminventory
+    privileged: true
     ports:
     - 8400:1337
     restart: always
@@ -123,6 +126,7 @@ services:
     container_name: luckyplaza
     networks:
     - luckyplaza
+    privileged: true
     ports:
     - 8403:1688
     restart: always
@@ -131,6 +135,7 @@ services:
     container_name: poisoned
     networks:
     - poisoned
+    privileged: true
     ports:
     - 8404:1340
     restart: always
@@ -163,10 +168,11 @@ services:
     - 8300:8888
     restart: always
   welcome:
-    build: challenges/pwn/Welcome2Pwn!/service/welcome
+    build: challenges/pwn/Welcome2Pwn/service
     container_name: welcome
     networks:
     - welcome2pwn
+    privileged: true
     ports:
     - 8405:1337
     restart: always
