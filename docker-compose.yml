@@ -20,6 +20,7 @@ services:
     container_name: ctfchallengehub
     networks:
     - ctfchallengehub
+    privileged: true
     ports:
     - 8401:5000
     restart: always
@@ -28,6 +29,7 @@ services:
     container_name: inversxin
     networks:
     - inversxin
+    privileged: true
     ports:
     - 8402:5000
     restart: always
@@ -96,6 +98,7 @@ services:
     container_name: luckyplaza
     networks:
     - luckyplaza
+    privileged: true
     ports:
     - 8403:5000
     restart: always
@@ -104,6 +107,7 @@ services:
     container_name: poisoned
     networks:
     - poisoned
+    privileged: true
     ports:
     - 8404:5000
     restart: always
@@ -140,6 +144,7 @@ services:
     container_name: welcome
     networks:
     - welcome2pwn
+    privileged: true
     ports:
     - 8405:5000
     restart: always
