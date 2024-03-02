@@ -82,7 +82,6 @@ services:
     container_name: cheminventory
     networks:
     - cheminventory
-    privileged: true
     ports:
     - 8400:1337
     restart: always
