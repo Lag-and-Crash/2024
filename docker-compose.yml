@@ -164,8 +164,8 @@ services:
       BOT_ALIAS: admin
       SERVER_PORT: 8104
   admin-bot:
-    container_name: admin
-    build: admin
+    container_name: admin-bot
+    build: challenges/web/Rusty Bot/service/admin
     restart: always
     expose:
       - 8001
