@@ -13,6 +13,7 @@ networks:
   thiswebtoosimple:
   wabbit:
   welcome2pwn:
+  rustybot:
 services:
   ctfchallengehub:
     build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
@@ -148,4 +149,29 @@ services:
     ports:
     - 8405:5000
     restart: always
+  rusty:
+    build: challenges/web/Rusty Bot/service/app
+    container_name: rusty
+    networks:
+      - rustybot
+    restart: always
+    ports:
+      - 1339:8104
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      FLAG: LNC24{leek_8fc7253e5d7c633e}
+      BOT_PORT: 8001
+      BOT_ALIAS: admin
+      SERVER_PORT: 8104
+  admin-bot:
+    container_name: admin
+    build: admin
+    restart: always
+    expose:
+      - 8001
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      BOT_PORT: 8001
+      SERVER_ALIAS: rusty
+      SERVER_PORT: 8104
 version: '3'
