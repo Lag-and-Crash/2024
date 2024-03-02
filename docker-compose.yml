@@ -166,6 +166,8 @@ services:
   admin-bot:
     container_name: admin-bot
     build: challenges/web/Rusty Bot/service/admin
+    networks:
+      - rustybot
     restart: always
     expose:
       - 8001
