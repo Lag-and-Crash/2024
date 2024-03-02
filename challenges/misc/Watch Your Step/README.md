@@ -1,5 +1,5 @@
 # Watch Your Step
-On their way to the space station, one of the crew members disappeared mysteriously, leaving behind only their watch. They were known to be carrying a kill code capable of disabling the AI system. We've extracted this program from the watch, but we're having trouble running it. Can you extract the kill code and stop the AI?
+On their way to the space station, one of the crew members disappeared mysteriously, leaving behind only their watch. They were known to be carrying a kill code capable of disabling the AI system. We've extracted this program from the watch, but we're having trouble running it. Can you find the kill code and stop the AI?
 
 ## Summary
 - **Author:** Mark Bosco
