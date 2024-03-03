@@ -14,6 +14,11 @@ challenge:
   # The discord username of the author
   discord: 'reanschwarzer_9029'
 
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/app.py
+
   # The flags for the challenge
   flags:
   - flag: LNC24{5imp1e_Bu7_N0t_Simpl3}
@@ -35,7 +40,7 @@ challenge:
 services:
 
   # The name of the service
-  This_WEB_Too_Simple:
-    name: This_WEB_Too_Simple
-    path: service/app
+  this_web_too_simple:
+    name: this_web_too_simple
+    path: service/This_WEB_Too_Simple/app
     port: '5000'
