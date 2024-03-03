@@ -11,4 +11,4 @@ ENV FLASK_APP=app
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=production
 
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:create_app()"]
+CMD ["gunicorn", "--timeout", "0", "-b", "0.0.0.0:5000", "app:create_app()"]
