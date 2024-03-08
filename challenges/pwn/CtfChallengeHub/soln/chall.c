@@ -1,7 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
+#include <unistd.h>
 
 const char* challs[5] = {"pwn", "re", "misc", "forens", "crypto"};
+
+void callme() {
+  asm volatile ("pop %%rdi\n\t"
+      "ret"
+      :
+      :
+      : "rdi");
+}
 
 void pwnchall() {
     sleep(1);
@@ -41,6 +52,11 @@ void cryptochall() {
 int main() {
     int i,x;
     char input[1024];
+    
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+    
     puts("Welcome to my challenge hub! Beat one of my challenges to get the flag!");
     puts("Choose a challenge:");
     for (i=0;i<5;i++) {
