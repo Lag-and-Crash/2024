@@ -182,6 +182,6 @@ services:
     networks:
       - bubbletea
     restart: always
-    expose:
+    ports:
       - 8002:1337
 version: '3'
