@@ -6,6 +6,7 @@ RUN apt install python3 socat -y
 WORKDIR /app
 COPY files/ /app/
 RUN chmod +x /app/server.py
+RUN chmod +x /app/ynetd
 
 EXPOSE 1337
-CMD ["socat", "TCP-LISTEN:1337,reuseaddr,fork", "EXEC:'/app/server.py',stderr"]
+CMD ["/app/ynetd", "-p", "1337", "python3 /app/server.py"]
