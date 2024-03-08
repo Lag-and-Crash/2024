@@ -14,6 +14,7 @@ networks:
   wabbit:
   welcome2pwn:
   rustybot:
+  bubbletea:
 services:
   ctfchallengehub:
     build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
@@ -175,4 +176,12 @@ services:
       BOT_PORT: 8001
       SERVER_ALIAS: rusty
       SERVER_PORT: 1339
+  bubbletea:
+    container_name: bubbletea
+    build: challenges/crypto/Bubble Tea/service/Bubble_Tea
+    networks:
+      - bubbletea
+    restart: always
+    expose:
+      - 8002:1337
 version: '3'
