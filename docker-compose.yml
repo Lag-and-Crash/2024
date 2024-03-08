@@ -13,6 +13,8 @@ networks:
   thiswebtoosimple:
   wabbit:
   welcome2pwn:
+  rustybot:
+  bubbletea:
 services:
   ctfchallengehub:
     build: challenges/pwn/CtfChallengeHub/service/CtfChallengeHub
@@ -22,6 +24,8 @@ services:
     privileged: true
     ports:
     - 8401:5000
+    profiles:
+      - wave2
     restart: always
   inversxin:
     build: challenges/pwn/InversXin/service/binexp
@@ -31,6 +35,8 @@ services:
     privileged: true
     ports:
     - 8402:5000
+    profiles:
+      - wave2
     restart: always
   orwells-firewall:
     build: challenges/web/Orwells_Firewall/service/Orwells_Firewall
@@ -39,6 +45,8 @@ services:
     - orwellsfirewall
     ports:
     - 8100:5000
+    profiles:
+      - wave1
     restart: always
   post-it:
     build: challenges/web/Post It/service/post-it
@@ -47,6 +55,8 @@ services:
     - postit
     ports:
     - 8101:1337
+    profiles:
+      - wave1
     restart: always
   this-web-too-simple:
     build: challenges/web/This_WEB_Too_Simple/service/This_WEB_Too_Simple/app
@@ -55,12 +65,16 @@ services:
     - thiswebtoosimple
     ports:
     - 8103:5000
+    profiles:
+      - wave1
     restart: always
   apache-server:
     build: challenges/web/SystemR3Wr1t3/service/app
     container_name: apache-server
     networks:
     - systemr3wr1t3
+    profiles:
+      - wave2
     read_only: true
     restart: always
     volumes:
@@ -75,15 +89,18 @@ services:
     - bitcollider
     ports:
     - 8000:1337
+    profiles:
+      - wave1
     restart: always
   cheminventory:
     build: challenges/pwn/Cheminventory/service
     container_name: cheminventory
     networks:
     - cheminventory
-    privileged: true
     ports:
     - 8400:1337
+    profiles:
+      - wave2
     restart: always
   dhi_or_dlo:
     build: challenges/crypto/dhi_or_dlo/service/dhi_or_dlo
@@ -92,6 +109,8 @@ services:
     - dhiordlo
     ports:
     - 8001:1337
+    profiles:
+      - wave3
     restart: always
   luckyplaza:
     build: challenges/pwn/Lucky Plaza/service/luckyplaza
@@ -101,6 +120,8 @@ services:
     privileged: true
     ports:
     - 8403:5000
+    profiles:
+      - wave1
     restart: always
   poisoned:
     build: challenges/pwn/Poisoned/service/poisoned
@@ -110,6 +131,8 @@ services:
     privileged: true
     ports:
     - 8404:5000
+    profiles:
+      - wave1
     restart: always
   racket-server:
     build: challenges/misc/Jacket/service/Jacket
@@ -118,6 +141,8 @@ services:
     - jacket
     ports:
     - 8200:8014
+    profiles:
+      - wave2
     read_only: true
     restart: always
   reverse-proxy:
@@ -129,6 +154,8 @@ services:
     - systemr3wr1t3
     ports:
     - 8102:80
+    profiles:
+      - wave2
     read_only: true
     restart: always
   wabbit:
@@ -138,6 +165,8 @@ services:
     - wabbit
     ports:
     - 8300:8888
+    profiles:
+      - wave3
     restart: always
   welcome:
     build: challenges/pwn/Welcome2Pwn/service
@@ -147,5 +176,50 @@ services:
     privileged: true
     ports:
     - 8405:5000
+    profiles:
+      - wave1
     restart: always
+  rusty:
+    build: challenges/web/Rusty Bot/service/app
+    container_name: rusty
+    depends_on:
+      - admin-bot
+    networks:
+      - rustybot
+    restart: always
+    ports:
+      - 8104:1339
+    profiles:
+      - wave3
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      FLAG: LNC24{leek_8fc7253e5d7c633e}
+      BOT_PORT: 8001
+      BOT_ALIAS: admin-bot
+      SERVER_PORT: 1339
+  admin-bot:
+    container_name: admin-bot
+    build: challenges/web/Rusty Bot/service/admin
+    networks:
+      - rustybot
+    restart: always
+    expose:
+      - 8001
+    profiles:
+      - wave3
+    environment:
+      ADMIN_PASSWORD: ZHy89qMR27nF2LYW
+      BOT_PORT: 8001
+      SERVER_ALIAS: rusty
+      SERVER_PORT: 1339
+  bubbletea:
+    container_name: bubbletea
+    build: challenges/crypto/Bubble Tea/service/Bubble_Tea
+    networks:
+      - bubbletea
+    restart: always
+    ports:
+      - 8002:1337
+    profiles:
+      - wave1
 version: '3'

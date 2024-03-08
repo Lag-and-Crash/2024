@@ -32,7 +32,7 @@ def test_flag(flag:bytes, test_str:str) -> bool:
 def main():
     is_correct = True
     flag = open("flag.txt", "rb").read()
-    for i in range(10):
+    for i in range(3):
         test_str = strings[i]
         if test_flag(flag, test_str) == False:
             is_correct = False

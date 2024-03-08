@@ -17,7 +17,7 @@ COPY run.sh .
 COPY pow_run.sh .
 COPY start.sh .
 RUN chmod +x /home/ctf/*
-RUN (crontab -l 2>/dev/null; echo "*/5 * * * * rm /home/ctf/*initramfs.cpio.gz") | crontab -
+RUN (crontab -l 2>/dev/null; echo "*/5 * * * * rm /home/ctf/*chem.cpio.gz") | crontab -
 RUN chown ctf:ctf /home/ctf/initramfs.cpio.gz
 
 ## Setup
