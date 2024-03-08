@@ -16,11 +16,4 @@ c = pow(m, e, n)
 print(f"n = {n}")
 print(f"e = {e}")
 print(f"c = {c}")
-print("dhi or dlo?")
-userinput = str(input(">> "))
-if userinput == "dhi":
-    print(f"dhi = {d // 3**(1293 - 333)}")
-elif userinput == "dlo":
-    print(f"dlo = {d % 3**333}")
-else:
-    print("Invalid input.")
+print(f"dlo = {d % 3**333}")
