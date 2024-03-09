@@ -1,1 +1,0 @@
-flag = b"A coppersmith, also known as a brazier, is a person who makes artifacts from copper and brass. Brass is an alloy of copper and zinc. LNC24{a_r3al1y_l0Ng_rsa_keY_rec0verY_cH41n_4nd_a_r3aLLy_l0NG_fl4G} Some coppersmiths can sometimes recover RSA keys"
