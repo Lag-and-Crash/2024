@@ -2,7 +2,6 @@ networks:
   bitcollider:
   cheminventory:
   ctfchallengehub:
-  dhiordlo:
   inversxin:
   jacket:
   luckyplaza:
@@ -101,16 +100,6 @@ services:
     - 8400:1337
     profiles:
       - wave2
-    restart: always
-  dhi_or_dlo:
-    build: challenges/crypto/dhi_or_dlo/service/dhi_or_dlo
-    container_name: dhi_or_dlo
-    networks:
-    - dhiordlo
-    ports:
-    - 8001:1337
-    profiles:
-      - wave3
     restart: always
   luckyplaza:
     build: challenges/pwn/Lucky Plaza/service/luckyplaza
