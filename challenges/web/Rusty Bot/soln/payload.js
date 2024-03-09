@@ -2,7 +2,7 @@ function escapeRegExp(string) {
 	return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
 
-let url = "http://chall:8000/";
+let url = "http://rusty:1339/";
 async function sc(prefix) {
 	const alphabet = `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'*+,-./:;<=>?@[\\]^_{|}~ `;
 
