@@ -7,8 +7,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-ENV FLASK_APP=app
-ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_ENV=production
-
-CMD ["gunicorn", "--timeout", "0", "-b", "0.0.0.0:5000", "app:create_app()"]
+ENTRYPOINT FLASK_APP=app FLASK_ENV=production flask run --host=0.0.0.0
