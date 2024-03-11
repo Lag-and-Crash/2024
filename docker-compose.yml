@@ -73,7 +73,7 @@ services:
     networks:
     - systemr3wr1t3
     profiles:
-      - wave2
+      - wave3
     read_only: true
     restart: always
     volumes:
@@ -155,7 +155,7 @@ services:
     ports:
     - 8300:8888
     profiles:
-      - wave3
+      - wave2
     restart: always
   welcome:
     build: challenges/pwn/Welcome2Pwn/service
@@ -179,7 +179,7 @@ services:
     ports:
       - 8104:1339
     profiles:
-      - wave3
+      - wave2
     environment:
       ADMIN_PASSWORD: ZHy89qMR27nF2LYW
       FLAG: LNC24{leek_8fc7253e5d7c633e}
@@ -195,7 +195,7 @@ services:
     expose:
       - 8001
     profiles:
-      - wave3
+      - wave2
     environment:
       ADMIN_PASSWORD: ZHy89qMR27nF2LYW
       BOT_PORT: 8001
