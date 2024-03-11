@@ -73,7 +73,7 @@ services:
     networks:
     - systemr3wr1t3
     profiles:
-      - wave3
+      - wave2
     read_only: true
     restart: always
     volumes:
