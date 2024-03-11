@@ -73,7 +73,7 @@ services:
     networks:
     - systemr3wr1t3
     profiles:
-      - wave2
+      - wave3
     read_only: true
     restart: always
     volumes:
@@ -144,7 +144,7 @@ services:
     ports:
     - 8102:80
     profiles:
-      - wave2
+      - wave3
     read_only: true
     restart: always
   wabbit:
