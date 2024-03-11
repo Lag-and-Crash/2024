@@ -23,7 +23,7 @@ mod css;
 pub fn register_public_routes(cfg: &mut actix_web::web::ServiceConfig) {
     cfg.service(get_note::get_note)
         .service(index::index)
-        .service(debug::debug)
+        // .service(debug::debug)
         .service(home::home)
         .service(actix_web::web::resource("/static/index.css").route(
             actix_web::web::get().to(css::index),
