@@ -14,4 +14,12 @@
 
 7. Convert 1646736588 to epoch time and date. in GMT: Tuesday, March 8, 2022 10:49:48 AM
 
-8. Fill in the blank to see and use the password; 142544.8325 to unlock the sheet 'nothing to see here' to get the flag
+8. If you look at the todo.txt, you will see 2 hints: 1. there should be corrupted flag.xlsx and to remove a cat image from there (somewhere)
+
+9. so, open hex editor and search for 'FF D8' in the file and remove 'FF D8' until 'FF D9' (remove the cat image)
+
+10. ensure that the file signature is 'D0 CF 11 E0 A1 B1 1A E1' (changed 2)
+
+11. save the file and rename it to flag.xlsx
+
+12. Use the password; 142544.8325 to unlock flag.xlsx to get the flag
