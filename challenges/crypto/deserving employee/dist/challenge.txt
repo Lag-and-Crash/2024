@@ -45,7 +45,7 @@ Story:
 your boss is sending a retrenchment package with an instruction to a teller at the bank to transfer $2000 to your account. you intercepted the encrypted message and decide to change it to the highest 4-digit number ($9999) to teach him a lesson
 
 Encrypted hex:
-9E A2 BC A0 C1 CF BC 32 68 EF E4 49 52 E7 38 61 E4 46 5C A2 4C 5A E8 FD 12 E8 4E E6 FC 4D F7 08 46 5D A8 55 4D CE
+9D A2 BC A0 C1 CF BC 32 68 EF E4 49 52 E7 38 61 E4 46 5C A2 4C 5A E8 FD 12 E8 4E E6 FC 4D F7 08 46 5D A8 55 4D CE
 
 Details (for nerds):
 - this ciphertext undergone an XOR cipher with an unknown key
@@ -54,11 +54,11 @@ Details (for nerds):
 - there is no padding and iv. the plaintext's and ciphertext's sizes are the same
 - the natural language pattern has been obscured very well as the key chosen has a very high key length (same as plaintext length). thus it is not very possible to use that attack
 - all characters in the plaintext are found on the keyboard
-- you know that the first 4 bytes(9E A2 BC A0) of the cipher has a plaintext equivalent of '2000'
+- you know that the first 4 bytes(9D A2 BC A0) of the cipher has a plaintext equivalent of '2000'
 - note: each of the char in '2000' is encrypted separately, not as a whole. Thus, '2000' = '32 30 30 30' [in hex]
 
 Details (for starters):
-- you know that the first 4 bytes(9E A2 BC A0) has the original text equivalent of '2000'
+- you know that the first 4 bytes(9D A2 BC A0) has the original text equivalent of '2000'
 - note: each of the '2000' is encrypted separately, not as a whole. Thus, '2000' = '32 30 30 30' [in hex]
 - think about this:
 data XOR password XOR data
@@ -71,7 +71,7 @@ similar to
 - use an online XOR tool for the similar example above
 
 Requirement:
-you are to change the first 4 bytes only(9E A2 BC A0), to a plaintext equivalent of '9999' through the ciphertext without decryption. the whole message will be the answer
+you are to change the first 4 bytes only(9D A2 BC A0), to a plaintext equivalent of '9999' through the ciphertext without decryption. the whole message will be the answer
 
 Hint:
 - any data that is XORed with itself will result in 0s the length of the data
