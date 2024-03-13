@@ -1,0 +1,45 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jon Chiang (CSIT)'
+
+  # The category of the challenge
+  category: 'Misc'
+
+  # The description of the challenge
+  description: 'I heard hardware tokens are secure so I made one using my Arduino.
+                Unfortunately I lost the source code and the design files for my project.
+                Can you help me recover my keys from this firmware image?
+                
+                Note:
+                There are two parts to this challenge, but they need not be solved in order.'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'jon.chiang'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/firmware.elf
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{i_M4d3_mY_0wN_3nC0d1nG_sH0u1d_b3_s4f3}
+    regex: false
+  
+  # The hints for the challenge
+  hints:
+    
+  - cost: 100
+    description: 'There is a function of interest that encodes the user input and compares it against an encoded string. Perhaps XOR-ing would help?'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Hardware Lockout 2'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

@@ -1,0 +1,46 @@
+challenge:
+  # The name of the challenge author
+  author: 'Liew Wen Yu'
+
+  # The category of the challenge
+  category: 'Web'
+
+  # The description of the challenge
+  description: A very simple web challenge
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'reanschwarzer_9029'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/app.py
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{5imp1e_Bu7_N0t_Simpl3}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'This_WEB_Too_Simple'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  this_web_too_simple:
+    name: this_web_too_simple
+    path: service/This_WEB_Too_Simple/app
+    port: '5000'

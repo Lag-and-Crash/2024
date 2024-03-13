@@ -1,0 +1,36 @@
+challenge:
+  # The name of the challenge author
+  author: 'Mark Bosco'
+
+  # The category of the challenge
+  category: 'Miscellaneous'
+
+  # The description of the challenge
+  description: "On their way to the space station, one of the crew members disappeared mysteriously, leaving behind only their watch. They were known to be carrying a kill code capable of disabling the AI system. We've extracted this program from the watch, but we're having trouble running it. Can you find the kill code and stop the AI?"
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'markbosco'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/app.data
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{EXECUT3_ORD3R_1337_N0W}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Watch Your Step'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

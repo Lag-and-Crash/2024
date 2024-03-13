@@ -1,0 +1,308 @@
+dispy.cpython-38.pyc (Python 3.8)
+[Code]
+    File Name: ./dispy.py
+    Object Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Locals: 0
+    Stack Size: 41
+    Flags: 0x00000040 (CO_NOFREE)
+    [Names]
+        'random'
+        'keys'
+        'sub19ab6de4'
+        'sub7fee621d'
+        'sub81dd46ea'
+        'ct'
+    [Var Names]
+    [Free Vars]
+    [Cell Vars]
+    [Constants]
+        0
+        None
+        217
+        21399
+        1411965
+        38886593
+        0x920B1F79L
+        0x3D4A846D35L
+        0xBA400482993L
+        0x5EB429F100365L
+        0x16EB08800754529L
+        0x24B93573ACAACB41L
+        0x155E20F222646F8B67L
+        0x44AF83D5ECDBA09C421L
+        0xABF1949E713F7EA39395L
+        0x41CD0D1D3B45B77B440A61L
+        0x1081D939C12A02B718B3F3B1L
+        0x24467AAE5BBACB40A50C43967L
+        0x1301C4064DAD14B78A9D7084363L
+        0x409DC2F5D94DCE6F95AE8DC03815L
+        0x159413C27D022BE5EF496DBFFBB389L
+        0x4F8F785EA6E0BBED07E3DDE39A1539BL
+        0xE73D5B15BD097686345A1CE493BF34D5L
+        0x4570243C603F71EDB208F21A0849942275L
+        0xFFFEAA1C2481A5E220DA69AF35A099C8DD7L
+        0x42D5D1923A0D8EE93EA03F8EC41F754F84863L
+        0x10437748848CE71BEDC66B7684A64478E961201L
+        0x430972A18FEB99A126CEF464F0EB040BB702F9AFL
+        0x13728CF1B91BEDE04B957690CCBAB9BC1C804740B7L
+        0x38EFFBDC2169C85219453FAF4362EB70B51073D67D9L
+        0xE048BD71A335508CE75B24F219AFCA646C063D7B07A9L
+        0x32D28A600F8CC9C5CC77B913F2439FE72552E3183F62E5L
+        0x130248DB78CA66767444B36F3DF59E334B34D7FCB083CBB9L
+        0x580DEFDEDC87D3C49ABA30276C485B9C8B48CB047D4051497L
+        0x12809A5A0BE78F6D68FFBF919A4C80B61ED088EF9D95A8D1D25L
+        0x4BFE18B83D22CB95372C7603901F1289CEE3723F25C02CCA7987L
+        0x9DDCC3F81960EDE7C423EDAA6D8B8F4244C1AF3F8BD6A17358B77L
+        0x33622CD92AC015169E4F194F69447038A23CEB24A8E51402DEC9443L
+        0x122E31FF3B9D6717D9B332AB42B14BE7BBBC8D44CC84FF83B495CE5C1L
+        0x2F454CDEE8FF42307D928DC80D6E22879F098BE189C42A75C025CD42C5L
+        0xDB69555E62679CD2DD3B44ADE6C66C3A56627E9BD334ADD46C99674A85FL
+        0x460A5DCEB3C973124C6AF330D5390FEDF3E116162495ACC75DD6C0C50950DL
+        0x1355CE52DD85DA7E87B9C726BECE95A0D5601D330954847F0135C2639326FCDL
+        [Code]
+            File Name: ./dispy.py
+            Object Name: sub19ab6de4
+            Arg Count: 2
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 3
+            Stack Size: 2
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+            [Var Names]
+                'in0'
+                'in1'
+                'v0'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+            [Disassembly]
+                0       LOAD_FAST                     0: in0
+                2       LOAD_FAST                     1: in1
+                4       COMPARE_OP                    4 (>)
+                6       POP_JUMP_IF_FALSE             20
+                8       LOAD_FAST                     0: in0
+                10      STORE_FAST                    2: v0
+                12      LOAD_FAST                     1: in1
+                14      STORE_FAST                    0: in0
+                16      LOAD_FAST                     2: v0
+                18      STORE_FAST                    1: in1
+                20      LOAD_FAST                     0: in0
+                22      POP_JUMP_IF_FALSE             40
+                24      LOAD_FAST                     1: in1
+                26      LOAD_FAST                     0: in0
+                28      BINARY_MODULO                 
+                30      LOAD_FAST                     0: in0
+                32      ROT_TWO                       
+                34      STORE_FAST                    0: in0
+                36      STORE_FAST                    1: in1
+                38      JUMP_ABSOLUTE                 20
+                40      LOAD_FAST                     1: in1
+                42      RETURN_VALUE                  
+        'sub19ab6de4'
+        [Code]
+            File Name: ./dispy.py
+            Object Name: sub7fee621d
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 3
+            Stack Size: 3
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+                'sub19ab6de4'
+            [Var Names]
+                'in0'
+                'v0'
+                'v1'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                0
+                1
+            [Disassembly]
+                0       LOAD_CONST                    1: 0
+                2       STORE_FAST                    1: v0
+                4       LOAD_CONST                    2: 1
+                6       STORE_FAST                    2: v1
+                8       LOAD_FAST                     2: v1
+                10      LOAD_FAST                     0: in0
+                12      LOAD_CONST                    2: 1
+                14      BINARY_ADD                    
+                16      COMPARE_OP                    0 (<)
+                18      POP_JUMP_IF_FALSE             52
+                20      LOAD_GLOBAL                   0: sub19ab6de4
+                22      LOAD_FAST                     2: v1
+                24      LOAD_FAST                     0: in0
+                26      CALL_FUNCTION                 2
+                28      LOAD_CONST                    2: 1
+                30      COMPARE_OP                    4 (>)
+                32      POP_JUMP_IF_FALSE             42
+                34      LOAD_FAST                     1: v0
+                36      LOAD_CONST                    2: 1
+                38      INPLACE_ADD                   
+                40      STORE_FAST                    1: v0
+                42      LOAD_FAST                     2: v1
+                44      LOAD_CONST                    2: 1
+                46      INPLACE_ADD                   
+                48      STORE_FAST                    2: v1
+                50      JUMP_ABSOLUTE                 8
+                52      LOAD_FAST                     0: in0
+                54      LOAD_FAST                     1: v0
+                56      BINARY_SUBTRACT               
+                58      RETURN_VALUE                  
+        'sub7fee621d'
+        [Code]
+            File Name: ./dispy.py
+            Object Name: sub81dd46ea
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 6
+            Stack Size: 4
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+                'len'
+                'keys'
+                'sub7fee621d'
+                'random'
+                'seed'
+                'randint'
+                'print'
+                'chr'
+            [Var Names]
+                'fl'
+                'v0'
+                'v1'
+                'v2'
+                'v3'
+                'v4'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                0
+                255
+                1
+            [Disassembly]
+                0       LOAD_CONST                    1: 0
+                2       STORE_FAST                    1: v0
+                4       LOAD_FAST                     1: v0
+                6       LOAD_GLOBAL                   0: len
+                8       LOAD_FAST                     0: fl
+                10      CALL_FUNCTION                 1
+                12      COMPARE_OP                    0 (<)
+                14      POP_JUMP_IF_FALSE             88
+                16      LOAD_GLOBAL                   1: NULL + len
+                18      LOAD_FAST                     1: v0
+                20      BINARY_SUBSCR                 
+                22      STORE_FAST                    2: v1
+                24      LOAD_FAST                     0: fl
+                26      LOAD_FAST                     1: v0
+                28      BINARY_SUBSCR                 
+                30      STORE_FAST                    3: v2
+                32      LOAD_GLOBAL                   2: keys
+                34      LOAD_FAST                     2: v1
+                36      CALL_FUNCTION                 1
+                38      STORE_FAST                    4: v3
+                40      LOAD_GLOBAL                   3: NULL + keys
+                42      LOAD_METHOD                   4: seed
+                44      LOAD_FAST                     4: v3
+                46      CALL_METHOD                   1
+                48      POP_TOP                       
+                50      LOAD_GLOBAL                   3: NULL + keys
+                52      LOAD_METHOD                   5: randint
+                54      LOAD_CONST                    1: 0
+                56      LOAD_CONST                    2: 255
+                58      CALL_METHOD                   2
+                60      LOAD_FAST                     3: v2
+                62      BINARY_XOR                    
+                64      STORE_FAST                    5: v4
+                66      LOAD_GLOBAL                   6: random
+                68      LOAD_GLOBAL                   7: NULL + random
+                70      LOAD_FAST                     5: v4
+                72      CALL_FUNCTION                 1
+                74      CALL_FUNCTION                 1
+                76      POP_TOP                       
+                78      LOAD_FAST                     1: v0
+                80      LOAD_CONST                    3: 1
+                82      INPLACE_ADD                   
+                84      STORE_FAST                    1: v0
+                86      JUMP_ABSOLUTE                 4
+                88      LOAD_CONST                    0: None
+                90      RETURN_VALUE                  
+        'sub81dd46ea'
+        b'\x05J\x05\x0cdB\xe0\x99\xee\xb2\xbfZJ\xcf\xac>oE\xa9{B"7r\x97\x8bK\x07\xc3\xaa\xe082\xde\rD\xb6\x13e\xb8<'
+    [Disassembly]
+        0       LOAD_CONST                    0: 0
+        2       LOAD_CONST                    1: None
+        4       IMPORT_NAME                   0: random
+        6       STORE_NAME                    0: random
+        8       LOAD_CONST                    2: 217
+        10      LOAD_CONST                    3: 21399
+        12      LOAD_CONST                    4: 1411965
+        14      LOAD_CONST                    5: 38886593
+        16      LOAD_CONST                    6: 0x920B1F79L
+        18      LOAD_CONST                    7: 0x3D4A846D35L
+        20      LOAD_CONST                    8: 0xBA400482993L
+        22      LOAD_CONST                    9: 0x5EB429F100365L
+        24      LOAD_CONST                    10: 0x16EB08800754529L
+        26      LOAD_CONST                    11: 0x24B93573ACAACB41L
+        28      LOAD_CONST                    12: 0x155E20F222646F8B67L
+        30      LOAD_CONST                    13: 0x44AF83D5ECDBA09C421L
+        32      LOAD_CONST                    14: 0xABF1949E713F7EA39395L
+        34      LOAD_CONST                    15: 0x41CD0D1D3B45B77B440A61L
+        36      LOAD_CONST                    16: 0x1081D939C12A02B718B3F3B1L
+        38      LOAD_CONST                    17: 0x24467AAE5BBACB40A50C43967L
+        40      LOAD_CONST                    18: 0x1301C4064DAD14B78A9D7084363L
+        42      LOAD_CONST                    19: 0x409DC2F5D94DCE6F95AE8DC03815L
+        44      LOAD_CONST                    20: 0x159413C27D022BE5EF496DBFFBB389L
+        46      LOAD_CONST                    21: 0x4F8F785EA6E0BBED07E3DDE39A1539BL
+        48      LOAD_CONST                    22: 0xE73D5B15BD097686345A1CE493BF34D5L
+        50      LOAD_CONST                    23: 0x4570243C603F71EDB208F21A0849942275L
+        52      LOAD_CONST                    24: 0xFFFEAA1C2481A5E220DA69AF35A099C8DD7L
+        54      LOAD_CONST                    25: 0x42D5D1923A0D8EE93EA03F8EC41F754F84863L
+        56      LOAD_CONST                    26: 0x10437748848CE71BEDC66B7684A64478E961201L
+        58      LOAD_CONST                    27: 0x430972A18FEB99A126CEF464F0EB040BB702F9AFL
+        60      LOAD_CONST                    28: 0x13728CF1B91BEDE04B957690CCBAB9BC1C804740B7L
+        62      LOAD_CONST                    29: 0x38EFFBDC2169C85219453FAF4362EB70B51073D67D9L
+        64      LOAD_CONST                    30: 0xE048BD71A335508CE75B24F219AFCA646C063D7B07A9L
+        66      LOAD_CONST                    31: 0x32D28A600F8CC9C5CC77B913F2439FE72552E3183F62E5L
+        68      LOAD_CONST                    32: 0x130248DB78CA66767444B36F3DF59E334B34D7FCB083CBB9L
+        70      LOAD_CONST                    33: 0x580DEFDEDC87D3C49ABA30276C485B9C8B48CB047D4051497L
+        72      LOAD_CONST                    34: 0x12809A5A0BE78F6D68FFBF919A4C80B61ED088EF9D95A8D1D25L
+        74      LOAD_CONST                    35: 0x4BFE18B83D22CB95372C7603901F1289CEE3723F25C02CCA7987L
+        76      LOAD_CONST                    36: 0x9DDCC3F81960EDE7C423EDAA6D8B8F4244C1AF3F8BD6A17358B77L
+        78      LOAD_CONST                    37: 0x33622CD92AC015169E4F194F69447038A23CEB24A8E51402DEC9443L
+        80      LOAD_CONST                    38: 0x122E31FF3B9D6717D9B332AB42B14BE7BBBC8D44CC84FF83B495CE5C1L
+        82      LOAD_CONST                    39: 0x2F454CDEE8FF42307D928DC80D6E22879F098BE189C42A75C025CD42C5L
+        84      LOAD_CONST                    40: 0xDB69555E62679CD2DD3B44ADE6C66C3A56627E9BD334ADD46C99674A85FL
+        86      LOAD_CONST                    41: 0x460A5DCEB3C973124C6AF330D5390FEDF3E116162495ACC75DD6C0C50950DL
+        88      LOAD_CONST                    42: 0x1355CE52DD85DA7E87B9C726BECE95A0D5601D330954847F0135C2639326FCDL
+        90      BUILD_LIST                    41
+        92      STORE_NAME                    1: keys
+        94      LOAD_CONST                    43: <CODE> sub19ab6de4
+        96      LOAD_CONST                    44: 'sub19ab6de4'
+        98      MAKE_FUNCTION                 0
+        100     STORE_NAME                    2: sub19ab6de4
+        102     LOAD_CONST                    45: <CODE> sub7fee621d
+        104     LOAD_CONST                    46: 'sub7fee621d'
+        106     MAKE_FUNCTION                 0
+        108     STORE_NAME                    3: sub7fee621d
+        110     LOAD_CONST                    47: <CODE> sub81dd46ea
+        112     LOAD_CONST                    48: 'sub81dd46ea'
+        114     MAKE_FUNCTION                 0
+        116     STORE_NAME                    4: sub81dd46ea
+        118     LOAD_CONST                    49: b'\x05J\x05\x0cdB\xe0\x99\xee\xb2\xbfZJ\xcf\xac>oE\xa9{B"7r\x97\x8bK\x07\xc3\xaa\xe082\xde\rD\xb6\x13e\xb8<'
+        120     STORE_NAME                    5: ct
+        122     LOAD_NAME                     4: sub81dd46ea
+        124     LOAD_NAME                     5: ct
+        126     CALL_FUNCTION                 1
+        128     POP_TOP                       
+        130     LOAD_CONST                    1: None
+        132     RETURN_VALUE                  

@@ -1,0 +1,43 @@
+{% extends "ministry_base.html" %}
+
+{% block head %}
+<title>NAME</title>
+<style>
+    .ministry-title {
+        margin-bottom: 10px;
+    }
+
+    .ministry-icon {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+    .ministry-description {
+        margin-bottom: 20px;
+    }
+
+    .back-button {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ff0000;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+        background-color: #ff3333;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<i class="fas ICON ministry-icon"></i>
+<div class="ministry-title">NAME</div>
+<div class="ministry-description">DESC</div>
+<a href="/minis" class="back-button">Back</a>
+{% endblock %}

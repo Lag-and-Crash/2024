@@ -1,0 +1,37 @@
+challenge:
+  # The name of the challenge author
+  author: 'Warri'
+
+  # The category of the challenge
+  category: 'Crypto'
+
+  # The description of the challenge
+  description: "RSA can't be that hard, right?"
+
+  # The difficulty of the challenge
+  difficulty: 'Insane'
+
+  # The discord username of the author
+  discord: 'warriii'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/chall.py
+  - dist/out.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{a_r3al1y_l0Ng_rsa_keY_rec0verY_cH41n_4nd_a_r3aLLy_l0NG_fl4G}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'SimpleRSAChallenge'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

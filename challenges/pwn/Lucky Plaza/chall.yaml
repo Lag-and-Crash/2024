@@ -17,9 +17,9 @@ challenge:
   # The files to be given to the participant
   # This should be a list of filepaths relative to the folder this file is in.
   files:
- - dist/Dockerfile
- - dist/lucky_plaza
- - dist/src.cpp
+  - dist/Dockerfile
+  - dist/lucky_plaza
+  - dist/src.cpp
 
   # The flags for the challenge
   flags:
@@ -45,4 +45,4 @@ services:
   luckyplaza:
     name: luckyplaza
     path: service/luckyplaza
-    port: '1688'
+    port: '5000'

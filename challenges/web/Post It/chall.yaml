@@ -1,0 +1,19 @@
+challenge:
+  author: JusCodin
+  category: Web
+  description: Look at this amazing website I made! Surely it's secure... right?
+  difficulty: Hard
+  discord: juscodin
+  files:
+  - dist/Post It.zip
+  flags:
+  - flag: LNC24{fLAsK_d3BUg_m0DE_!$_NOt_5@FE_4t_@L1}
+    regex: false
+  hints: null
+  name: Post It
+  requirements: null
+services:
+  post-it:
+    name: post-it
+    path: service/post-it
+    port: '1337'

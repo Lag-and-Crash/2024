@@ -1,0 +1,28 @@
+challenge:
+  author: "SpeedFox198"
+  category: "Crypto"
+  name: "ECB Penguin"
+  description: "I scribbled the flag on Tux the Penguin's belly! See if you can recover it?"
+  difficulty: "Medium"
+  discord: "speedfox198"
+
+  files:
+  - dist/encrypt.py
+  - dist/encrypted.bin
+
+  flags:
+  - flag: LNC24{ECB_p3N6u1n!?!!}
+    regex: false
+
+  hints:
+  - cost: 50
+    description: "ECB mode is very vulnerable! https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_codebook_(ECB)"
+    requirements: null
+  - cost: 100
+    description: "Don't know what is an ECB penguin? https://words.filippo.io/the-ecb-penguin/"
+    requirements: null
+  - cost: 150
+    description: "Some guessing and bruteforcing is needed! https://crypto.stackexchange.com/questions/63145/variation-on-the-ecb-penguin-problem"
+    requirements: null
+
+  requirements: null

@@ -1,0 +1,40 @@
+challenge:
+  # The name of the challenge author
+  author: 'Warri'
+
+  # The category of the challenge
+  category: 'Cryptography'
+
+  # The description of the challenge
+  description: 'I love packing! Especially when packing things back to back!'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'warriii'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/chall.py
+  - dist/output.txt
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{l4tT1cs_aR3_c0ol!}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'Knapsack is a bag with shoulder straps, carried on the back, and typically made of canvas or other weatherproof material'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Backpacker'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

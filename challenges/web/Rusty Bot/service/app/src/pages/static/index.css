@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    background-color: silver;
+}
+#banner {
+    text-align: center;
+}
+#err_msg {
+    text-align: center;
+    color: red;
+}
+.forms {
+    display: flex;
+    justify-content: space-evenly;
+}
+.form {
+    padding: 1em;
+    border: 0.1em solid black;
+}
+form > input {
+    margin: 0.1em;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+}
+
+input[type="submit"] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

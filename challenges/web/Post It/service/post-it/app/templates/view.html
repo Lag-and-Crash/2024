@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}View Post{% endblock %}
+{% block nav_items %}
+  <li class="nav-item">
+    <a class="nav-link active" href="/">Home</a>
+  {% if user %}
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/pubkey">RSA Key</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+  </li>
+  {% endif %}
+{% endblock %}
+{% block main %}
+<pre class="bg-white rounded p-3"><code>{{ content }}</code></pre>
+
+<div class="text-center">
+  <a href="/" class="btn btn-secondary">Back</a>
+</div>
+{% endblock %}

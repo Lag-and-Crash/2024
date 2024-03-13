@@ -1,0 +1,47 @@
+.background {
+  viewport-fill: #ffffff;
+}
+
+#BigTitle {
+  font-size: 40;
+  font-family: System-Bold;
+  text-length: 100;
+  text-anchor: middle;
+  y: 36%;
+  height:100;
+  fill: #000000;
+}
+
+
+#Subtitle {
+  font-size: 20;
+  font-family: System-Light;
+  text-length: 250;
+  text-anchor: middle;
+  y: 55%;
+  fill: #000000;
+  height:40;
+}
+
+
+#logo {
+  x: 50%-50;
+  y: 1;
+  width:100;
+  height:100;
+}
+
+.text-button{
+  fill:#7a7a7a;
+  
+}
+
+#startButton #text{
+  text-buffer: "NEXT POINT";
+  fill:#000000;
+}
+
+/*
+Route: wyjmD|sgkNg_@`@aCoEsBhFc_@TiAsA]oC\gIHwEcHpBAfEoGjBeHrBLnA{D~Hs@qGcIdCaEtBHfC
+
+More compact, thanks to Google. */
