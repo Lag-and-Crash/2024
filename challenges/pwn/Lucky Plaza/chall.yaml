@@ -1,0 +1,48 @@
+challenge:
+  # The name of the challenge author
+  author: 'flyyee'
+
+  # The category of the challenge
+  category: 'Pwn'
+
+  # The description of the challenge
+  description: 'This plaza is full of lucky numbers.'
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'flyyee'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/Dockerfile
+  - dist/lucky_plaza
+  - dist/src.cpp
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{i'm_feeling_lucky_339a65e93299ad8d72c42b263aa23117}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Lucky Plaza'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  luckyplaza:
+    name: luckyplaza
+    path: service/luckyplaza
+    port: '5000'

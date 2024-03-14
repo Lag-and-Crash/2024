@@ -1,0 +1,14 @@
+
+<svg class="background" id='mainbody'>
+
+<use id="startButton" pointer-events="all" href="#text-button" class="text-button bottom application-fill" />
+
+  <image id='logo'  href="loc1.jpg" />
+  <textarea id="BigTitle" />
+
+
+  <textarea id="Subtitle" /> 
+
+
+
+</svg>

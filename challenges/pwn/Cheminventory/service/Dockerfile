@@ -1,0 +1,30 @@
+# syntax=docker/dockerfile:1
+FROM ubuntu:latest
+
+## General stuff
+RUN apt update && apt upgrade -y
+RUN apt-get install qemu-system cron -y
+RUN useradd -d /home/ctf/ -m -p ctf -s /bin/bash ctf
+RUN echo "ctf:ctf" | chpasswd
+WORKDIR /home/ctf
+
+## Challenge files
+COPY ynetd . 
+COPY initramfs.cpio.gz .
+COPY bzImage .
+COPY kctf-pow .
+COPY run.sh .
+COPY pow_run.sh .
+COPY start.sh .
+RUN chmod +x /home/ctf/*
+RUN (crontab -l 2>/dev/null; echo "*/5 * * * * rm /home/ctf/*chem.cpio.gz") | crontab -
+RUN chown ctf:ctf /home/ctf/initramfs.cpio.gz
+
+## Setup
+#USER ctf
+EXPOSE 1337
+
+CMD /home/ctf/start.sh && ./ynetd -p 1337 ./pow_run.sh
+
+## Run command
+## docker run -p 1337:1337 <image name>

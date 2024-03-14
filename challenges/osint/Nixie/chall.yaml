@@ -1,0 +1,45 @@
+challenge:
+  # The name of the challenge author
+  author: 'n00bth3b0x'
+
+  # The category of the challenge
+  category: OSINT
+  # The description of the challenge
+  description: 'I obtained this image from Flickr in recently. Unfortunately, I lost the initial file which included metadata such as GPS information or hidden annotations in the image. I need to find the author who posted this photo on Flickr and find the artist name, GPS in the original photo
+
+  Flag format: LNC24{flag-GPSLat-GPSLong}
+
+  Example: Flag: this_is_flag, GPS Latitude: 1_18_35.193_N, GPS Longitude: 105_51_19.0794_E
+  You should submit: LNC24{this_is_flag-1_18_35.193_N-105_51_19.0794_E}'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'n00bth3b0x'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/Nixie.png
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{So_wh0_w4nt5_2_k1Ll_th3_k1n9?-53_24_32.36_N-2_59_57.65_W}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 100
+    description: 'Flickr api might help to find who uploaded the image'
+  - cost: 150
+    description: '/meta'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Nixie'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

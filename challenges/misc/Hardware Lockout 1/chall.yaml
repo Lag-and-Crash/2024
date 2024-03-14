@@ -1,0 +1,44 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jon Chiang (CSIT)'
+
+  # The category of the challenge
+  category: 'Misc'
+
+  # The description of the challenge
+  description: 'I heard hardware tokens are secure so I made one using my Arduino.
+                Unfortunately I lost the source code and the design files for my project.
+                Can you help me recover my keys from this firmware image?
+                
+                Note:
+                There are two parts to this challenge, but they need not be solved in order.'
+
+  # The difficulty of the challenge
+  difficulty: 'Medium'
+
+  # The discord username of the author
+  discord: 'jon.chiang'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/firmware.elf
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{7Hr0ugH_h0L3_5o1dEr1ng}
+    regex: false
+  
+  # The hints for the challenge
+  hints:
+  - cost: 0
+    description: 'You can use the Wokwi Arduino Uno simulator to tackle the first flag.'
+    requirements: none
+  
+  # The name of the challenge
+  name: 'Hardware Lockout 1'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null

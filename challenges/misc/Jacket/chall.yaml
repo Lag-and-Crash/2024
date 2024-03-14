@@ -1,0 +1,44 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'Misc'
+
+  # The description of the challenge
+  description: Java can be a lot more functional than you think.
+
+  # The difficulty of the challenge
+  difficulty: 'Hard'
+
+  # The discord username of the author
+  discord: 'Portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{jvm_r4ck3t_1nt3rf4c3_dn10jdsaj9}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Jacket'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  racket-server:
+    name: racket-server
+    path: service/Jacket
+    port: '8014'
+    extras:
+      read_only: true
+    

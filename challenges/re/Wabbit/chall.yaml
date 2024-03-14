@@ -1,0 +1,41 @@
+challenge:
+  # The name of the challenge author
+  author: 'Carl Voller'
+
+  # The category of the challenge
+  category: 'RE'
+
+  # The description of the challenge
+  description: A bash shell running locally to my browser? Wow!
+
+  # The difficulty of the challenge
+  difficulty: 'Insane'
+
+  # The discord username of the author
+  discord: 'portatolova'
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{g0_w4sm_r3v3rs4l_1n_w3b_c0nt41n3rs_98aycgad}
+    regex: false
+
+  # The hints for the challenge
+  hints: null
+  
+  # The name of the challenge
+  name: 'Wabbit'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
+
+# The services for the challenge
+# If you have no services, do not include this section
+services:
+
+  # The name of the service
+  wabbit:
+    name: wabbit
+    path: service/Wabbit
+    port: '8888'

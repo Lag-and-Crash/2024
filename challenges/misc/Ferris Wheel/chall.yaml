@@ -1,0 +1,43 @@
+challenge:
+  # The name of the challenge author
+  author: 'Jun Jie'
+
+  # The category of the challenge
+  category: 'Miscellaneous'
+
+  # The description of the challenge
+  description: 'I love ferris wheels! something about how they go so high up in the air!'
+
+  # The difficulty of the challenge
+  difficulty: 'Easy'
+
+  # The discord username of the author
+  discord: 'mintyly'
+
+  # The files to be given to the participant
+  # This should be a list of filepaths relative to the folder this file is in.
+  files:
+  - dist/ferris_wheel.json
+
+  # The flags for the challenge
+  flags:
+  - flag: LNC24{K3YB0T5_4R3_C00L}
+    regex: false
+
+  # The hints for the challenge
+  hints:
+  - cost: 50
+    description: 'you know what else I love about keyboards? the fact that i can customize the key inputs!'
+    requirements: null
+
+  - cost: 100
+    description: 'i wonder if there is a website where i can customize the configuration of the files'
+    requirements: null
+  
+  # The name of the challenge
+  name: 'Ferris Wheel'
+
+  # The requirements for the challenge
+  # This should be a list of challenge names that the user must have completed before
+  # being able to see this challenge
+  requirements: null
