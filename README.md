@@ -4,11 +4,11 @@ This repository is the official challenge repository for [Lag and Crash 4.0](htt
 ## Scoreboard (Closed-Division)
 The closed division contains teams with exactly five (5) members, each from either a secondary school, junior college, polytechnic, ITE or the equivalent.
 
-![closed](https://cdn.discordapp.com/attachments/1031087741078884382/1217360760225792051/848564b75fa361931bb16806d7b06199.png?ex=6603be8e&is=65f1498e&hm=9a90f606119ee40426939398771dcd13588deb7fdb82f25d75fa8555b991dc1c&)
+![closed](https://i.gyazo.com/ccaec5a4f2819a5bbcd1b01376217bdd.png)
 ## Scoreboard (Open-Division)
 The open division contains teams with any number of members, each from any educational institution; including non-students.
 
-![open](https://cdn.discordapp.com/attachments/1031087741078884382/1217360915696193566/6f06a7b2888432c637488b568a589ec9.png?ex=6603beb3&is=65f149b3&hm=bf84aa499cbd7b610038e0bd2f12af239d87484b842c5f9e9aab8aa11d2950fb&)
+![open](https://i.gyazo.com/3c35a66dce1bab9d34b156d485a3556a.png)
 
 ## Navigation
 Each challenge in the [challenges](./challenges/) directory is categorised by its respective category, with at least one of the following subdirectories:
